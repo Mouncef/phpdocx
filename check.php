@@ -295,6 +295,95 @@ if ($isWeb) {
 	$output .= '</li>';
 }
 
+// Examples path write access
+if ($isWeb) {
+	$output .= '<li class="odd">';
+}
+if (!is_writable('examples/docx')) {
+	if ($isWeb) {
+		$output .= '<span class="testwarn">';
+	}
+	$output .= 'Warning ';
+	if ($isWeb) {
+		$output .= '</span>';
+	}
+	$output .= 'The path examples/docx used by the examples isn\'t writable.' . $break;
+} else {
+	if ($isWeb) {
+		$output .= '<span class="testok">';
+	}
+	$output .= 'OK ';
+	if ($isWeb) {
+		$output .= '</span>';
+	}
+	$output .= 'The path examples/docx used by the examples is writable.' . $break;
+}
+if ($isWeb) {
+	$output .= '</li>';
+}
+
+// Check license
+if ($isWeb) {
+	$output .= '<li class="odd">';
+}
+if (file_exists('classes/GenerateDocx.inc')) {
+	require_once 'classes/PhpdocxUtilities.inc';
+	require_once 'classes/GenerateDocx.inc';
+	try {
+		$license = GenerateDocx::beginDocx();
+		if ($isWeb) {
+			$output .= '<span class="testok">';
+		}
+		$output .= 'OK ';
+		if ($isWeb) {
+			$output .= '</span>';
+		}
+		$output .= 'The license is valid for the current domain/server.' . $break;
+	} catch (Exception $e) {
+		if ($isWeb) {
+			$output .= '<span class="testko">';
+		}
+		$output .= 'Error ';
+		if ($isWeb) {
+			$output .= '</span>';
+		}
+		$output .= 'The license is not valid for the current domain/server.' . $break;
+		$output .= '<span class="comment">Please add the license code in config/phpdocxconfig.ini file.</span>' . $break;
+	}
+	if ($isWeb) {
+		$output .= '</li>';
+	}
+}
+
+// Check temp folder
+if ($isWeb) {
+	$output .= '<li class="even">';
+}
+require_once 'classes/CreateDocx.inc';
+$isWritable = is_writable(CreateDocx::getTempDir());
+if (!$isWritable) {
+	if ($isWeb) {
+		$output .= '<span class="testko">';
+	}
+	$output .= 'Error ';
+	if ($isWeb) {
+		$output .= '</span>';
+	}
+	$output .= 'The library can\'t write to temp folder. You can set a custom tmp path in config/phpdocx_config.ini file.' . $break;
+} else {
+	if ($isWeb) {
+		$output .= '<span class="testok">';
+	}
+	$output .= 'OK ';
+	if ($isWeb) {
+		$output .= '</span>';
+	}
+	$output .= 'The library can write to temp folder.' . $break;
+}
+if ($isWeb) {
+	$output .= '</li>';
+}
+
 // TransformDocAdv file exists
 if ($isWeb) {
 	$output .= '<li class="even">';
@@ -333,6 +422,31 @@ if (file_exists('classes/TransformDocAdv.inc')) {
 			}
 		}
 	}
+	/*
+	// steps to install the plugin
+	if ($isWeb) {
+		$output .= '<span>Click here if you need help to install the conversion plugin.</span>' . $break;
+		$output .= '<ol class="sublevel">';
+			$output .= '<li>';
+				$output .= '<span>OpenOffice is used to transform DOCX to PDF and other formats.</span>';
+				$output .= '<span>Do a test.</span>';
+				$output .= '<span id="test-output-openoffice">Do a test.</span>';
+			$output .= '</li>';
+			$output .= '<li>';
+				$output .= '<span>OdfConverter allows to transform DOCX to ODT to get the best output when the document has tables or complex content. PHPDocX includes OdfConverter versions for Linux 32 bits and 64 bits and Windows.</span>';
+				$output .= '<span>Do a test.</span>';
+				$output .= '<span id="test-output-odfconverter">Do a test.</span>';
+			$output .= '</li>';
+			$output .= '<li>';
+				$output .= '<span>PHPDocX includes four options to do the transformation: with or without OdfConverter and using passthru or an external script. The method to use will depend on your server config and access permissions.</span>';
+				$output .= '<span>Test OpenOffice with OdfConverter using the direct method.</span>';
+				$output .= '<span>Test OpenOffice without OdfConverter using the direct method.</span>';
+				$output .= '<span>Test OpenOffice with OdfConverter using the script method.</span>';
+				$output .= '<span>Test OpenOffice without OdfConverter using the script method.</span>';
+				$output .= '<span id="test-output-run">Do a test.</span>';
+			$output .= '</li>';
+		$output .= '</ol>';
+	}*/
 }
 if ($isWeb) {
 	$output .= '</li>';
@@ -359,6 +473,7 @@ require_once 'classes/PhpdocxUtilities.inc';
 $output .= 'PHP_VERSION: ' . PHP_VERSION . "\n";
 $output .= 'PHP_OS: ' . PHP_OS . "\n";
 $output .= 'PHP_UNAME: ' . php_uname() . "\n";
+$output .= 'CODE: ' . $phpdocxconfig['license']['code'] . "\n";
 $output .= 'SERVER_NAME: ' . $_SERVER['SERVER_NAME'] . "\n";
 $output .= 'SERVER_SOFTWARE: ' . $_SERVER['SERVER_SOFTWARE'] . "\n";
 $output .= 'SERVER_ADDR: ' . $_SERVER['SERVER_ADDR'] . "\n";
@@ -371,6 +486,7 @@ $output .= 'ZipArchive: ' . class_exists('ZipArchive') . "\n";
 $output .= 'DomDocument: ' . class_exists('DomDocument') . "\n";
 $output .= 'SimpleXMLElement: ' . class_exists('SimpleXMLElement') . "\n";
 $output .= 'Tidy: ' . class_exists('Tidy') . "\n";
+$output .= 'IS_WRITABLE DEFAULT TEMP: ' . is_writable(CreateDocx::getTempDir()) . "\n";
 
 if ($isWeb) {
 	$output .= '</textarea>';

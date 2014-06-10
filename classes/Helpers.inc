@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Repair a DOCX created in OpenOffice. When OpenOffice creates a DOCX,
  * and then changed by ZipArchive of PHP the ZIP file has errors that prevent to
@@ -8,8 +7,7 @@
  * 
  * @param string $file File path
  */
-function repairZipOpenOffice($file)
-{
+function repairZipOpenOffice($file) {
     $fileRepaired = new ZipArchive();
     $fileRepaired->open($file);
     $this->_docxContent = array();

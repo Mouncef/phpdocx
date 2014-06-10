@@ -1,1 +1,234 @@
-7Vn7b9s2EP7dfwUXGLPdJpYTDMPq1EaXR7FieSHJ1gJFIDAUbRORRI2kbGdF/vfdUbIjW48qSZtswIgA1uMeHz/eHY9Ko+G8etUgr8i+4tRwMpIqINznAQ8NPMY37xi8GEt1Swg5m0SeZHP7OKLsho45PF0o6ERcRrdKjCeGkP3lZZt1yAlVjFNypqQXMyZkyDU5jn0jAu4JSi66R100kB3tiTFR33Fms1l3J/BYl8mgY734gvFQW+8ZmSjBh2LOLNpiMjSAyzETwKcdH6HMpPKcSEk3tYA61uKUKw2g0OJOb/unbg/+3qS+wpsUULEvkHIazKdapzy+BxoPUxa/NBqoaXnGsfgh7yhjHFQiJaags3w8pYpoo0Q4Th859jcVg1fUCEaargjhMmScDMjJH0dHu9/YT9OdB37OKKwpuFUxM2Ve4mtgdtWifURGccgMMuy6bGGk3bESXxqLFbcXdzmvB/zpTj3+MJ/HdAwGAm4m0tskiptYhZqwWClYVvLp+KgOGPIuUUyZJufJXd5KGWojL6xmDnVqt2kmQm8Nk8UqnsgFqPvcyHAxC7IMHTkiNm4fNJUkxi/53CzfJEFZNJU0XJczGnPzIfWem5IYkbbm/qjfz0Z3Et6djByOvBwJ+Syff+3O7lLvbp28dSNlDBZWxzqMRVTRgARizj3SpGqsP/euKhec5fGvkWTNwGxRxQU2XbzPzjITESCWeN25yrw/OD1O2YKrA8nidZ6aoLpHNXLaequkNAQehLo/G2ykBVAzKKlUd2XEQ3iHxFADt2rsYIGF+opsQNwFvrPT6/3sBFSEG8MW6a7A64J9Bx0MW6v4toa+pB5kR3uBJQtPnakTCemM07PCQENKl967vaTjExrwdgvEWhk1jK6lKjjg4dhMyJD01kOryWQMuTkgeektsr27KhvC+1VRYXjQTmx0domDuw+BHDMEdjwiNMF7vJxBLZ/I2PcgGgM5teFFdHytjTAxBsOqI3CwnK+mU27JQe+dAkRbQ4g8oOPEXif29yfC94pVViNm1YW989IoSVneGo6E0sZazOYXJAdEzZci4K1WNg/v1/JaypuAqpsPHggpGnrtNzg2yZtkZNc9DsVfMcfFBVm8EV4bSjpOZ3WV00zD2tEyUKdGgvteK7fOIoxi8yf14yTSZ32VjcN1kW6yypUCaGTke/sT2FuXV5e3ER9sXPMxpsCKdtFAC6MDamgt0RDJmPWn1B9sYEWWNsUyREGKbTi1TPGQXvvcqyfMqM9Ow8O5MAvvvZpucD0+IGl1xJ2aZFjBhO1ySRSqej3rL4LxwlCFExPeYMMSmolSJJQkxCeU2+ByH8j7two23LkUosAS3dfQlAOqSHHN1ZRvDMn70/Pjy8NPl3byS+GncPQ9c0Rz3DANr2TueRCWEYruX56/EnRrlrEWCq25SSvi9tXnlsdHFA5d1lrrqkN+/JGUvSQ/YNler5pFkEsMrKIp3B3KYGrxdx5e8rBoy14CQxEyyOns5qRL0WTNbP9SoJh7gvt2u3kD8r1dAr9vB4kBvHn9uhTqCoct0sJe4dqncNZkkBCUGTiQWtsfoaP6Coy7ioBpJSGbRObzpMfz+6rOuMrNo7wc8dB7WiVabBuHoVexmzhZktK4zLUx0HCzm2s5z+XjE5O8ML3hXMQh/rAl266ZxFmd3ppOo3SF/5NtVyqebb0YrszjOq/UWv3uK1V4ZAe20MZw2pPzegqpEha1X2Mja7pJtdJ4W6C0NC2D5SEkOQ+BXbd1fKnO8RER85w94/5vh/u/751++r9v/DYI/01bSZJ8j9xICjEK7YrwUXprXZ9Fdhrh1w9d7Y8qRW8rVAv3tTAODkOjhP10ZL/QVFjIt373TBY0y2+z5suaPsc559DNcWW/AiUeiUxcEjulkn70fnMtBfy5DFpB94sjDivJLzdXwAwOC98FqxMxqrC7eT+bAkN129ok2R5cdT0lI0/Owpc6rr9ok/LYya+ZfOZOxfOOhDZ1jrYF1aNOpUCxr9WCsjMnHM84ZRNSrkqohmMgvyWDIWlOMRbqHQhtuPgwc6wotyvN0zQRWS/3i1H/ZEjs0TAluBBTVRdV2jkVbGbP2bocnJ+eHZx+PKlqXb4jxPoNQDGIx2z0me/pK5/yYe6u4pEPNLWTg1b5cdp1R/f/dXLd7OG6tZmd6GbWSWf5L7O7xj8=
+<?php
+
+/**
+ * Create form element
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) 2009-2011 Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    http://www.phpdocx.com/wp-content/themes/lightword/pro_license.php
+ * @version    2013.02.28
+ * @link       http://www.phpdocx.com
+ * @since      2013.01.19
+ */
+
+class CreateFormElement 
+{
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private static $_instance = NULL;
+    /**
+     *
+     * @access private
+     * @var string
+     */
+    private $_xml;
+    /**
+     * Construct
+     *
+     * @access public
+     */
+    public function __construct()
+    {
+
+    }
+
+    /**
+     * Destruct
+     *
+     * @access public
+     */
+    public function __destruct()
+    {
+
+    }
+
+    /**
+     * Magic method, returns current XML
+     *
+     * @access public
+     * @return string Return current XML
+     */
+    public function __toString()
+    {
+        return $this->_xml;
+    }
+
+    /**
+     * Singleton, return instance of class
+     *
+     * @access public
+     * @return CreateText
+     * @static
+     */
+    public static function getInstance()
+    {
+        if (self::$_instance == NULL) {
+            self::$_instance = new CreateFormElement();
+        }
+        return self::$_instance;
+    }
+
+    /**
+     * Create form element
+     *
+     * @access public
+     * @param mixed $args[0]
+     */
+    public function createFormElement()
+    {      
+        $args = func_get_args();
+        $this->_xml = $args[2];
+        $DOM = new DOMDocument();
+        $xmlBase = '<root xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">' . $this->_xml . '</root>';
+        $DOM->loadXML($xmlBase);
+        $rPrNodes = $DOM->getElementsByTagName('rPr');
+        if($rPrNodes->length > 0){
+            $count = $rPrNodes->length -1;
+            $node = $rPrNodes->item($count);//the last one is the one we should remove for substitution
+            $rPr = $DOM->saveXML($node);
+            $node->parentNode->removeChild($node);
+            $this->_xml = $DOM->saveXML($DOM->documentElement->firstChild);
+        }else{
+            $rPr = '';
+        }
+
+        $bookmarkId = rand(99999,9999999);
+        $uniqueName = uniqid(true);
+        
+        if($args[0] == 'textfield'){
+            $inputValue = '<w:r>';
+            $inputValue .=  $rPr;
+            $inputValue .= '<w:fldChar w:fldCharType="begin">
+                                <w:ffData>
+                                <w:name w:val="Texto'.$uniqueName.'"/>
+                                <w:enabled/>
+                                <w:calcOnExit w:val="0"/>
+                                <w:textInput/>
+                                </w:ffData>
+                             </w:fldChar>
+                        </w:r>
+                        <w:bookmarkStart w:id="'.$bookmarkId.'" w:name="Textfield_'.$uniqueName.'"/>
+                        <w:r>';
+            $inputValue .= $rPr;
+            $inputValue .= '<w:instrText xml:space="preserve"> FORMTEXT </w:instrText>
+                        </w:r>
+                        <w:r>';
+            $inputValue .= $rPr;
+            $inputValue .= '<w:fldChar w:fldCharType="separate"/>
+                        </w:r>
+                        <w:r>';
+             $inputValue .= $rPr;
+             $inputValue .= '<w:t xml:space="preserve"> </w:t>
+                        </w:r>
+                        <w:r>';
+             $inputValue .= $rPr; 
+             $inputValue .= '<w:t xml:space="preserve">';
+           if(isset($args[1]['defaultValue']) && $args[1]['defaultValue'] !=''){
+               $inputValue .= $args[1]['defaultValue'];
+           }else{
+              if(isset($args[1]['size']) && $args[1]['size'] > 0){
+                  $size = $args[1]['size'];
+              }else{
+                  $size = 18;
+              }
+              for($k =0; $k <= $size; $k++){
+                $inputValue .=' '; //blank characters for Word
+              }
+           }
+           $inputValue .='</w:t></w:r><w:r>';
+           $inputValue .= $rPr;               
+           $inputValue .= '<w:t xml:space="preserve"> </w:t></w:r><w:r>';
+           $inputValue .= $rPr;  
+           $inputValue .= '<w:t xml:space="preserve"> </w:t></w:r>
+                        <w:r>
+                            <w:fldChar w:fldCharType="end"/>
+                        </w:r>
+                        <w:bookmarkEnd w:id="'.$bookmarkId.'"/>';
+        }else if($args[0] == 'checkbox'){
+            if(isset($args[1]['defaultValue']) && $args[1]['defaultValue']){
+                $selected = 1;
+            }else{
+                $selected = 0;
+           }
+                    
+           $inputValue = '<w:r>';
+           $inputValue .= $rPr;
+           $inputValue .= '<w:fldChar w:fldCharType="begin">
+                                <w:ffData>
+                                    <w:name w:val="cbox'.$uniqueName.'"/>
+                                    <w:enabled/>
+                                    <w:calcOnExit w:val="0"/>
+                                    <w:checkBox>
+                                        <w:sizeAuto/>
+                                        <w:default w:val="'.$selected.'"/>
+                                    </w:checkBox>
+                                </w:ffData>
+                            </w:fldChar>
+                        </w:r>
+                        <w:bookmarkStart w:id="'.$bookmarkId.'" w:name="cbox'.$uniqueName.'"/>
+                        <w:r>';
+            $inputValue .= $rPr;
+            $inputValue .= '<w:instrText xml:space="preserve"> FORMCHECKBOX </w:instrText>
+                        </w:r>
+                        <w:r>';
+            $inputValue .= $rPr;
+            $inputValue .= '<w:fldChar w:fldCharType="separate"/>
+                        </w:r>
+                        <w:r>';
+            $inputValue .= $rPr;
+            $inputValue .= '<w:fldChar w:fldCharType="end"/>
+                        </w:r>
+                        <w:bookmarkEnd w:id="'.$bookmarkId.'"/>';       
+        }else if($args[0] == 'select'){
+            if(isset($args[1]['defaultValue']) &&
+               is_int($args[1]['defaultValue']) &&
+               isset($args[1]['selectOptions']) &&
+               is_array($args[1]['selectOptions'])){
+                $numEntries = count($args[1]['selectOptions']);
+                if($args[1]['defaultValue'] < $numEntries){
+                    //Reorder the select options array
+                    $selected = $args[1]['selectOptions'][$args[1]['defaultValue']];
+                    unset($args[1]['selectOptions'][$args[1]['defaultValue']]);
+                    array_unshift($args[1]['selectOptions'], $selected);
+                }
+            }
+            $inputValue ='<w:bookmarkStart w:id="'.$bookmarkId.'" w:name="dropdown_'.$uniqueName.'"/>
+                        <w:r>';
+            $inputValue .= $rPr;
+            $inputValue .= '<w:fldChar w:fldCharType="begin">
+                                <w:ffData>
+                                    <w:name w:val="dropdown_'.$uniqueName.'"/>
+                                    <w:enabled/>
+                                    <w:calcOnExit w:val="0"/>
+                                    <w:ddList>';
+            if(isset($args[1]['selectOptions']) && is_array($args[1]['selectOptions']) && count($args[1]['selectOptions']) > 0){
+                foreach($args[1]['selectOptions'] as $key=>$value){
+                    $inputValue .= '<w:listEntry w:val="'.$value.'"/>';
+                }
+            }
+            $inputValue .= '</w:ddList>
+                    </w:ffData>
+                </w:fldChar>
+            </w:r>
+            <w:r>';
+            $inputValue .= $rPr;
+            $inputValue .= '<w:instrText xml:space="preserve"> FORMDROPDOWN </w:instrText>
+            </w:r>
+            <w:r>';
+            $inputValue .= $rPr;
+            $inputValue .= '<w:fldChar w:fldCharType="end"/>
+            </w:r>
+            <w:bookmarkEnd w:id="'.$bookmarkId.'"/>';
+        }
+        
+        $this->_xml = str_replace('<w:r><w:t xml:space="preserve">__formElement__</w:t></w:r>', $inputValue, $this->_xml);   
+    }
+    
+
+
+}

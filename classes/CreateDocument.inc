@@ -1,1 +1,31 @@
-bVDNSgMxEL7nKebYLpjU4kVPlnq0peADSJyMu6G7SUhmXYv47ibZRSoYcgiT728+IVTTCGhg95Y4amTAXqcEYyID7z4CRtJsXQvG4ziQ45TRhfCImqn18QIApy7k7886DhrPuqU8nbk0g324RNt2DLD/fa5wDUcdkTScojcjovWOEhzGnu1Axmp4kc+yCFyfVcccHpSapkluB4MS/bCuLr1Fcql6X2HCnK7A1BRu0DvOeyjuaKCk+hJl8tGoEP3rolA4VfGDYsqhiuJ2c3snN/neL17uvAT63yujlNB/a93XRp6WKsWXKHTxLX4A
+<?php
+
+/**
+ * Abstract class used for creating documents
+ *
+ * @category   Phpdocx
+ * @package    create
+ * @copyright  Copyright (c) 2009-2013 Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    http://www.phpdocx.com/wp-content/themes/lightword/pro_license.php
+ * @version    2.2
+ * @link       http://www.phpdocx.com
+ * @since      File available since Release 2.2
+ */
+
+/**
+ * Abstract class used for creating documents
+ *
+ * @category   Phpdocx
+ * @package    create
+ * @copyright  Copyright (c) 2009-2013 Narcea ProduCiones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    http://www.phpdocx.com/wp-content/themes/lightword/pro_license.php
+ * @version    2.2
+ * @link       http://www.phpdocx.com
+ * @since      Class available since Release 2.2
+ */
+abstract class CreateDocument
+{
+    
+}

@@ -11,5 +11,10 @@
 	],
 	"autoload": {
 		"classmap": ["classes/"]
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "3.7-dev"
+		}
 	}
 }
