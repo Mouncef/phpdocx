@@ -1,4 +1,4 @@
-====PHPDocX 3.7 by 2mdc.com====
+====PHPocX 4.0 by 2mdc.com====
 http://www.phpdocx.com/
 
 ====Requirements====

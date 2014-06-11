@@ -34,6 +34,7 @@
  * @copyright 2004 Benj Carson
  * @author Benj Carson <benjcarson@digitaljunkies.ca>
  * @package parserhtml
+
  */
 
 /* $Id: frame.cls.php 359 2011-02-05 12:15:06Z fabien.menager $ */
@@ -245,14 +246,6 @@ return new FrameParserList($this); }
     
     //$style->set_frame($this);
     $this->_style = $style;
-  }
-
-   // This representation of a DOM element will likely be part of a tree
-  // and will continue to be stored after processing this subtree has
-  // completed.  The style information consumes a large amount of memory
-  // and may be cleared when no longer needed.
-  function clear_style() {
-    $this->_style = null;
   }
 
 //

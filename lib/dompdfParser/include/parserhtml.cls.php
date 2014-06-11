@@ -34,6 +34,7 @@
  * @copyright 2004 Benj Carson
  * @author Benj Carson <benjcarson@digitaljunkies.ca>
  * @package dompdf
+
  */
 
 /* $Id: dompdf.cls.php 362 2011-02-16 22:17:28Z fabien.menager $ */
@@ -439,13 +440,17 @@ class PARSERHTML {
 			$str = @$doc->saveHTML();
 		}
 
-		$str = preg_replace('/>(\s*$\s*)</me', "strpos('$0', ' ') === false?'><':'> <'", $str);
+                $str = preg_replace_callback(
+                        '/>(\s*$\s*)</m',
+                        create_function('$matches', "return strpos('$matches[0]', ' ') === false?'><':'> <';"),
+                        $str
+                        );
 
 		$str = str_replace('</body>', '<close></body>', $str);
 
 		return($str);
 	}
-
+        
   /**
    * Builds the {@link FrameParser_Tree}, loads any CSS and applies the styles to
    * the {@link FrameParser_Tree}
@@ -611,8 +616,6 @@ class PARSERHTML {
 						if(!empty($aTemp)) $aTempTree[] = $aTemp;
 					}
 					$aDompdfTree['children'][0]['children'][0]['children'] = empty($aTempTree)?array():$aTempTree;
-          // Frame processing has completed.  Free memory.
-          $frame->clear_style();
 					return($aDompdfTree);
 					break;
 				}
@@ -669,8 +672,6 @@ class PARSERHTML {
 					if(!empty($aTemp)) $aTempTree[] = $aTemp;
 				}
 				$aDompdfTree['children'] = empty($aTempTree)?array():$aTempTree;
-        // Frame processing has completed.  Free memory.
-        $frame->clear_style();
 				return($aDompdfTree);
 				break;
 			case 'close':
@@ -680,8 +681,6 @@ class PARSERHTML {
 					if(!empty($aTemp)) $aTempTree[] = $aTemp;
 				}
 				$aDompdfTree['children'] = empty($aTempTree)?array():$aTempTree;
-        // Frame processing has completed.  Free memory.
-        $frame->clear_style();
 				return($aDompdfTree);
 				break;
 			default:
@@ -696,14 +695,10 @@ class PARSERHTML {
 					if(!empty($aTemp)) $aTempTree[] = $aTemp;
 				}
 				$aDompdfTree['children'] = empty($aTempTree)?array():$aTempTree;
-        // Frame processing has completed.  Free memory.
-        $frame->clear_style();
 				return($aDompdfTree);
 				break;
 		}
 
-    // Frame processing has completed.  Free memory.
-    $frame->clear_style();
 		return(false);
 	}
 
@@ -743,10 +738,8 @@ class PARSERHTML {
   		//returns bad url if not found (ms word can show a placeholder)
 
   		if(function_exists('stream_context_set_default')) stream_context_set_default(array('http' => array('method' => 'GET', 'max_redirects' => 20, 'ignore_errors' => 0)));
-      // Frame processing has completed.  Free memory.
   		return($url);
     } else {
-      // Frame processing has completed.  Free memory.
       return($href);
     }
 	}
@@ -860,7 +853,7 @@ class PARSERHTML {
 		foreach($aStyleParsers as $style){
 			if($style == 'font_family') $sTemp = $properties->get_props($style);
 			else{
-				try{$sTemp = $properties->nonmagic_get($style);}
+				try{$sTemp = $properties->$style;}
 				catch(Exception $e){$sTemp = '';}
 			}
 			if($sTemp != ''){

@@ -5,16 +5,15 @@
  *
  * @category   Phpdocx
  * @package    elements
- * @copyright  Copyright (c) 2009-2013 Narcea Producciones Multimedia S.L.
+ * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
  *             (http://www.2mdc.com)
  * @license    http://www.phpdocx.com/wp-content/themes/lightword/pro_license.php
- * @version    2011.19.03
+ * @version    2014.04.09
  * @link       http://www.phpdocx.com
- * @since      File available since Release 1.0
  */
-
 class CreateElement
 {
+
     const MATHNAMESPACEWORD = 'm';
     const NAMESPACEWORD = 'w';
 
@@ -32,7 +31,7 @@ class CreateElement
      */
     public function __construct()
     {
-
+        
     }
 
     /**
@@ -52,7 +51,7 @@ class CreateElement
      */
     public function __toString()
     {
-
+        
     }
 
     /**
@@ -74,7 +73,7 @@ class CreateElement
     {
         $this->_xml = preg_replace('/__GENERATERPR__/', '', $this->_xml, 1);
     }
-    
+
     /**
      * Generate w:align
      *
@@ -105,12 +104,7 @@ class CreateElement
      * @param string $allowOverlap
      * @access protected
      */
-    protected function generateANCHOR($behindDoc = 0, $distT = '0',
-                                      $distB = '0', $distL = '0',
-                                      $distR = '0', $simplePos = 0,
-                                      $relativeHeight = '0',
-                                      $locked = 0, $layoutInCell = 1,
-                                      $allowOverlap = 1)
+    protected function generateANCHOR($behindDoc = 0, $distT = '0', $distB = '0', $distL = '0', $distR = '0', $simplePos = 0, $relativeHeight = '0', $locked = 0, $layoutInCell = 1, $allowOverlap = 1)
     {
         $xml = '<' . CreateImage::NAMESPACEWORD . ':anchor distT="' . $distT .
                 '" distB="' . $distB . '" distL="' . $distL .
@@ -141,20 +135,24 @@ class CreateElement
     }
 
     /**
-     * Generate w:b
+     * Generate w:b and w:bCs
      *
      * @param string $val
      * @access protected
      */
     protected function generateB($val = 'off')
     {
-        if($val == 'single'){
+        if ($val == 'single') {
             $val = 'on';
         }
         $xml = '<' . CreateElement::NAMESPACEWORD .
                 ':b ' . CreateElement::NAMESPACEWORD .
                 ':val="' . $val . '"></' . CreateElement::NAMESPACEWORD .
-                ':b>__GENERATERPR__';
+                ':b><' . CreateElement::NAMESPACEWORD .
+                ':bCs ' . CreateElement::NAMESPACEWORD .
+                ':val="' . $val . '"></' . CreateElement::NAMESPACEWORD .
+                ':bCs>' .
+                '__GENERATERPR__';
 
         $this->_xml = str_replace('__GENERATERPR__', $xml, $this->_xml);
     }
@@ -203,7 +201,7 @@ class CreateElement
 
         $this->_xml = str_replace('__GENERATEPIC__', $xml, $this->_xml);
     }
-    
+
     /**
      * Generate w:br
      *
@@ -213,8 +211,8 @@ class CreateElement
     protected function generateBR($type = '')
     {
         $xml = '<' . CreateElement::NAMESPACEWORD . ':br ' .
-            CreateElement::NAMESPACEWORD . ':type="' . $type . '"></' .
-            CreateElement::NAMESPACEWORD . ':br>';
+                CreateElement::NAMESPACEWORD . ':type="' . $type . '"></' .
+                CreateElement::NAMESPACEWORD . ':br>';
         $this->_xml = str_replace('__GENERATER__', $xml, $this->_xml);
     }
 
@@ -272,6 +270,7 @@ class CreateElement
      */
     protected function generateDOCPR($id = "1", $name = "0 Imagen")
     {
+        $id = rand(999999, 999999999);
         $xml = '<' . CreateImage::NAMESPACEWORD . ':docPr id="' . $id .
                 '" name="' . $name . '" descr="' . $this->getName() .
                 '"></' . CreateImage::NAMESPACEWORD .
@@ -304,8 +303,7 @@ class CreateElement
      * @param string $b
      * @access protected
      */
-    protected function generateEFFECTEXTENT($l = "19050", $t = "0",
-                                            $r = "4307", $b = "0")
+    protected function generateEFFECTEXTENT($l = "19050", $t = "0", $r = "4307", $b = "0")
     {
         $xml = '<' . CreateImage::NAMESPACEWORD . ':effectExtent l="' . $l .
                 '" t="' . $t . '" r="' . $r . '" b="' . $b .
@@ -369,7 +367,7 @@ class CreateElement
      * @access protected
      */
     protected function generateGRAPHIC(
-        $xmlns = 'http://schemas.openxmlformats.org/drawingml/2006/main')
+    $xmlns = 'http://schemas.openxmlformats.org/drawingml/2006/main')
     {
         $xml = '<' . CreateImage::NAMESPACEWORD1 .
                 ':graphic xmlns:a="' . $xmlns .
@@ -388,15 +386,16 @@ class CreateElement
     protected function generateGRAPHICPRAMELOCKS($noChangeAspect = '')
     {
         $xmlAux = '<' . CreateImage::NAMESPACEWORD1 .
-                    ':graphicFrameLocks xmlns:a="' .
-                    'http://schemas.openxmlformats.org/drawingml/2006/main"';
+                ':graphicFrameLocks xmlns:a="' .
+                'http://schemas.openxmlformats.org/drawingml/2006/main"';
 
-        if ($noChangeAspect != '')
+        if ($noChangeAspect != '') {
             $xmlAux .= ' noChangeAspect="' . $noChangeAspect . '"';
+        }
         $xmlAux .= '></' . CreateImage::NAMESPACEWORD1 . ':graphicFrameLocks>';
 
         $this->_xml = str_replace(
-            '__GENERATECNVGRAPHICFRAMEPR__', $xmlAux, $this->_xml
+                '__GENERATECNVGRAPHICFRAMEPR__', $xmlAux, $this->_xml
         );
     }
 
@@ -407,7 +406,7 @@ class CreateElement
      * @access protected
      */
     protected function generateGRAPHICDATA(
-        $uri = 'http://schemas.openxmlformats.org/drawingml/2006/picture')
+    $uri = 'http://schemas.openxmlformats.org/drawingml/2006/picture')
     {
         $xml = '<' . CreateImage::NAMESPACEWORD1 .
                 ':graphicData uri="' . $uri .
@@ -426,8 +425,7 @@ class CreateElement
      * @param string $distR
      * @access protected
      */
-    protected function generateINLINE($distT = '0', $distB ='0',
-                                      $distL = '0', $distR ='0')
+    protected function generateINLINE($distT = '0', $distB = '0', $distL = '0', $distR = '0')
     {
         $xml = '<' . CreateImage::NAMESPACEWORD .
                 ':inline distT="' . $distT . '" distB="' . $distB .
@@ -550,7 +548,7 @@ class CreateElement
      * @access protected
      */
     protected function generatePIC(
-        $pic = 'http://schemas.openxmlformats.org/drawingml/2006/picture')
+    $pic = 'http://schemas.openxmlformats.org/drawingml/2006/picture')
     {
         $xml = '<' . CreateImage::NAMESPACEWORD2 .
                 ':pic xmlns:pic="' . $pic .
@@ -568,9 +566,9 @@ class CreateElement
     protected function generatePICT()
     {
         $this->_xml = str_replace(
-            '__GENERATER__', '<' . CreateElement::NAMESPACEWORD .
-            ':pict>__GENERATEPICT__</' . CreateElement::NAMESPACEWORD .
-            ':pict>', $this->_xml
+                '__GENERATER__', '<' . CreateElement::NAMESPACEWORD .
+                ':pict>__GENERATEPICT__</' . CreateElement::NAMESPACEWORD .
+                ':pict>', $this->_xml
         );
     }
 
@@ -688,8 +686,8 @@ class CreateElement
     protected function generateQUITAR()
     {
         $this->_xml = '<' . CreateElement::NAMESPACEWORD .
-                      ':r>__GENERATER__</' . CreateElement::NAMESPACEWORD .
-                      ':r>';
+                ':r>__GENERATER__</' . CreateElement::NAMESPACEWORD .
+                ':r>';
     }
 
     /**
@@ -718,7 +716,7 @@ class CreateElement
                         ':r>__GENERATESUBR__';
 
                 $this->_xml = str_replace(
-                    '__GENERATESUBR__', $xml, $this->_xml
+                        '__GENERATESUBR__', $xml, $this->_xml
                 );
             }
         } else {
@@ -810,13 +808,13 @@ class CreateElement
 
     /**
      * Generate w:solidfill
-     *
+     * @param string $color
      * @access protected
      */
-    protected function generateSOLIDFILL()
+    protected function generateSOLIDFILL($color = '000000')
     {
         $xml = '<' . CreateImage::NAMESPACEWORD1 .
-                ':solidFill>__GENERATESOLIDFILL__</' .
+                ':solidFill><a:srgbClr val="' . $color . '" /></' .
                 CreateImage::NAMESPACEWORD1 .
                 ':solidFill>__GENERATELN__';
         $this->_xml = str_replace('__GENERATELN__', $xml, $this->_xml);
@@ -920,11 +918,11 @@ class CreateElement
      */
     protected function generateWRAPSQUARE($wrapText = "bothSides")
     {
-        $xml = '<' . CreateImage::NAMESPACEWORD . 
+        $xml = '<' . CreateImage::NAMESPACEWORD .
                 ':wrapSquare wrapText="' . $wrapText .
                 '"></' . CreateImage::NAMESPACEWORD .
                 ':wrapSquare>__GENERATEINLINE__';
-        
+
         $this->_xml = str_replace('__GENERATEINLINE__', $xml, $this->_xml);
     }
 
@@ -954,7 +952,7 @@ class CreateElement
         $xml = '<' . CreateImage::NAMESPACEWORD .
                 ':wrapTopAndBottom></' . CreateImage::NAMESPACEWORD .
                 ':wrapTopAndBottom>__GENERATEINLINE__';
-        
+
         $this->_xml = str_replace('__GENERATEINLINE__', $xml, $this->_xml);
     }
 

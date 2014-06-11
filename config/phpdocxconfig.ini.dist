@@ -13,9 +13,11 @@ language = "en-US"
 paper_size = "A4"
 
 ; right to left languages config
-; bidi = "true"
-; rtl = "true"
+;bidi = "true"
+;rtl = "true"
 
 [license]
 ; PHPDocX license code
 code = ""
+; subdomain (PRO license), domain (Corporate license) or IP (Enterprise license)
+value = ""
