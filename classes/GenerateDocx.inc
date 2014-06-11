@@ -1,1 +1,59 @@
-pVVtb5swEP7Or7hJkQzVAkn20rVRp05dVE1aq6rd9iXqImMuwSpgZEyTrO1/n01ICpR0iYYiEZ2fe+65Fx+W5R0cWHAAZyGyO5gKCRTuacQDiDjDJEN9aM5PGVU4E3IJAFdhGgi2KMwpZXd0htpacdBokS4ln4UK4Gzz12YODHq9o+6g138Hl1QypHAlRZAzxkWCGVzkkeIxBpzCjfvdNVTVxw6VSo89bz6fu4M4YC4TsVPEK2MbUAWTroQamDdPu0wkChPlqRBjzLzIiJoLGXipFJOSwfgUjPcoMy3KMBq5bk//3pexkrtSUHssjfIsFtEsg3NMUOrKfTX1erAs41RU3DyvVr0ArHGnlDHUdGnua8DGKlHlMgFfiAhpUpq94r1CQqao0q9pnjBlsvFxxhMjxnYK2IO1rm1n8Qd1K+AECBk2rH6rlTWtZQl0mad8pg/LOfmpeMQVx+z4OKUyw7Pi3HaG1saVT8F+w7MMld2Z3Iyuf42ux2T1nlx+uRiRW8epaDXPKvfn6E+AkR6AOug5KSV5bNcVjklZbHI7JkwE+u0MW9z9tfsMVSgy5S8TGuN2oW0cbCNhi1ebE91Bt56avC78qVbVGm0qcTaJqWKhTbzf/aOB2//4yfXI27VKBx4fX/M4HOyDfsHv78X/T3RvH/DgcHd0JBiNTKuryW7gu02iKf5m/E4gDj7Y61FwgUxMO8mOQ72Vyt+HqnHb6uUxG6yabJOtcuMNlOjApWnb4P1/7s+COxlKvY8v9bW7QbNZcJFG+sLaxNWaX71XlYtRYbmiUjW3Vy3GN33KRJ7ofVSzV+jM1rY7XAMbrt3+ELT98wn0zJ9uV2cKtVRNfTBO1dJuaHpRlHbd9YDjDr+tr4/WXbgrlWnRqsF1cCPEi4SaDW+E2t74tubXQ1RGQYVSzCHBOYwWDFPzUbPJjxAlAs8gEar5JSVlyzTHk/UX
+<?php
+
+/**
+ * Check for a valid license
+ *
+ * @category   Phpdocx
+ * @package    license
+ * @copyright  Copyright (c) 2009-2013 Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    http://www.phpdocx.com/wp-content/themes/lightword/pro_license.php
+ * @version    2013.03.04
+ * @link       http://www.phpdocx.com
+ * @since      File available since Release 1.0
+ */
+class GenerateDocx
+{
+
+    /**
+     * Check for a valid license
+     *
+     * @access public
+     * @return boolean
+     */
+    public static function beginDocx()
+    {
+        $xzerod = '';
+        $xzerob = '';
+        $xzeroc = '';
+        $phpdocxconfig = PhpdocxUtilities::parseConfig();
+
+        if (!isset($_SERVER['SERVER_NAME'])) {
+            return;
+        } else {
+            $xzerod = trim($phpdocxconfig['license']['code']);
+            $xzerob = trim(gethostbyname($_SERVER['SERVER_NAME']));
+            $xzeroc = trim($_SERVER['SERVER_NAME']);
+        }
+        if (
+            preg_match('/^192.168./', $xzeroc) ||
+            preg_match('/^172./', $xzeroc) ||
+            preg_match('/^192.168./', $xzerob) ||
+            preg_match('/^172./', $xzerob) ||
+            preg_match('/^10./', $xzerob) ||
+            preg_match('/^127./', $xzerob) ||
+            preg_match('/localhost/', $xzeroc)
+        ) {
+            return;
+        } elseif ($xzerod == md5($xzeroc . '_docx')) {
+            return;
+        } elseif (!preg_match('/^www./', $xzeroc)) {
+            $xzeroc = 'www.' . $xzeroc;
+        }
+        if ($xzerod == md5($xzeroc . '_docx')) {
+            return;
+        }
+        throw new Exception('There is not a valid license');
+    }
+
+}

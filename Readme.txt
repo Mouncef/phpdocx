@@ -1,4 +1,4 @@
-====PHPdocX 4.0 by 2mdc.com====
+====PHPDocX 3.7 by 2mdc.com====
 http://www.phpdocx.com/
 
 PHPDOCX is a PHP library designed to dynamically generate reports in Word format (WordprocessingML).
@@ -9,36 +9,7 @@ The formatting capabilities of the library allow the programmers to generate dyn
 
 This library also provides an easy method to generate documents in other standard formats such as PDF or HTML.
 
-====What's new on PHPdocX 4.0?====
-
-This new major version represents a big step forward regarding the functionality and scope of PHPDocX.
-
-The most important change introduced in this new version is that it removes all the restrictions regarding custom templates that were limitating previous versions.
-
-With PHPDocX 4.0 one may use concurrently the standard template methods of the past (that have also been improved and refactored) with any of the core PHPDocX methods. This means in practice that one is not limited to modify the contents of a custom by simply replacing variables but that one may insert arbitrary Word content anywhere within the template.
-
-Another important new feature is the introduction of "Word fragments" that allow for a simpler and more flexible creation of content. One may create a Word fragment with arbitrary content: paragraphs, lists, charts, images, footnote, etcetera and later insert it anywhere in the Word document in a truly simple and transparent way.
-
-The main changes can be summarized as follows:
-
-CORE AND TEMPLATES:
-      * Completely refactored CreateDocx class and a completely new CreateDocxFromTemplate class that extends the former and allows for a complete control of documents based on custom templates.
-      * New WordFragment class that greatly simplifies the process of nesting content within the Word document.
-      * Complete refactoring of the prior template methods that allow for higher control and the replacement of variables by arbitrarily complex Word fragments.
-      * createListStyle: greater choice of options for the creation of custom list styles.
-      * addTextBox: includes now new formatting options and it is easier to include arbitrary content within textboxes.
-      * insertWordFragmentBefore/After: allows to include content anywhere within a Word template.
-
-DOCX UTILITIES PACKAGE
-      * MultiMerge: much faster API that allows for the merging of an arbitrarily large number of Word documents with just
-      one line of code.
- 
-CONVERSION PLUGIN
-     * The conversion of numbered lists has been greatly improved as weell as the handling of sections with multiple columns.
-
-Besides these new classes and methods we have also included some minor bug fixes and multiple improvements in the API including extra options and a uniformization the typing and units conventions.
-
-3.7 VERSION
+====What's new on PHPdocX 3.7?====
 
 The main goal of this version is to allow for the generation of "right to left language" (like, for example, Arabic or Hebrew) Word documents with PHPDocX.
 
@@ -75,7 +46,7 @@ DOCX UTILITIES PACKAGE
 CONVERSION PLUGIN
      * There is a new debugging mode to simplify the installation process.
 
-3.6 VERSION
+3.6 PRO VERSION
 
 CORE:
       * addMergeField: it is now posible to include standard Microsoft Word merge fields. Although PHPDocx has its own protocols for the substitution of variables several of our clients have requested this feature to allow further manipulations in Microsoft Office with the generated docx files.
@@ -89,7 +60,7 @@ CONVERSION PLUGIN
 
 The package now includes an improved version of check.php that outputs info useful to debug any issue or problem related to the license or the library.
 
-3.5.1 VERSION
+3.5.1 PRO VERSION
 
 This minor version includes:
     * New version of check.php script that includes license info and better guidance for the installation of the conversion plugin.
@@ -97,9 +68,9 @@ This minor version includes:
     * Several improvements for the embedding of HTML into Word.
     * Minor bug fixes.
 
-3.5 VERSION
+3.5 PRO VERSION
 
-This version includes several changes that greatly improve the core functionality of PHPDocX and in particular the conversion of HTML into Word.
+This new version includes several changes that greatly improve the core functionality of PHPDocX and in particular the conversion of HTML into Word.
 
 CORE:
       * addComment: it is now posible to include Word comments that may incorporate complex formatting as well as images and HTML content. It is also posible to fully customize the comment properties and reference marks.
@@ -121,7 +92,7 @@ DOCX UTILITIES PACKAGE
 CONVERSION PLUGIN
      * New integrated versions of ODFConverter for Linux 64-bit OS and Windows.
 
-3.3 VERSION
+3.3 PRO VERSION
 
 This new version includes some changes that greatly improve the PHPDocX functionality. There are several brand new methods:
 
@@ -145,7 +116,7 @@ Besides these new methods we have improved previously existing functionality:
 
 We have also restructured the API documentation to simplify the access to relevant information. We have also included in the v3.3 package a refined version of  the "installation script" that now checks not only for the PHP modules required by PHPDocX but also permission rights as well as the correct installation of the PDF conversion plugin (both via web or CLI).
 
-3.2 VERSION
+3.2 PRO VERSION
 
 This version includes some important changes that greatly improve the PHPDocX functionality:
 
@@ -168,7 +139,7 @@ Besides these improvements, PHPDocX v3.2 also offers:
 - Minor improvements in the addText method: one may use the caps option to capitalize text and it is now easier to set the different paragraph margins.
 - Minor bug fixes
 
-3.1 VERSION
+3.1 PRO VERSION
 
 This new version includes quite a few new features that you may find interesting:
 
@@ -198,7 +169,7 @@ Besides these improvements v3.1 also offers:
 - One may import styles using also their id (this may simplify some tasks)
 - Minor bug fixes
 
-3.0 VERSION
+3.0 PRO VERSION
 
 This version includes substantial changes that have required that this new version were not fully backwards compatible with the latest v2.7.
 
@@ -220,7 +191,7 @@ to filter the HTML content via XPath expressions and associate different native 
 -New addPageNumber method
 -New addDateAndHour method
 
-2.7 VERSION
+2.7 PRO VERSION
 
 The main differences with respect the prior stable major version PHPDocX v2.6 can be summarized as follows:
 
@@ -232,7 +203,7 @@ The main differences with respect the prior stable major version PHPDocX v2.6 ca
 - New method: setColorBackgraound to modify the background color of a Word document
 - Several other minor improvements and bug fixes
 
-2.6 VERSION
+2.6 PRO VERSION
 
 The main improvements are:
 

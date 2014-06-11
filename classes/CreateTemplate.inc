@@ -1,1 +1,2270 @@
-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
+<?php
+
+/**
+ * Use DOCX as templates
+ *
+ * @category   Phpdocx
+ * @package    elements
+ * @copyright  Copyright (c) 2009-2013 Narcea Producciones Multimedia S.L.
+ *             (http://www.2mdc.com)
+ * @license    http://www.phpdocx.com/wp-content/themes/lightword/pro_license.php
+ * @version    2013.01.25
+ * @link       http://www.phpdocx.com
+ * @since      Class available since Release 1.7
+ */
+class CreateTemplate
+{
+
+    /**
+     * @access public
+     * @var array
+     * @static
+     */
+    public static $embedFiles = array();
+    /**
+     * @access public
+     * @var string
+     * @static
+     */
+    public static $path;
+    /**
+     * @access public
+     * @var array
+     * @static
+     */
+    public static $placeholderImages = array();
+    /**
+     * @access public
+     * @var array
+     * @static
+     */
+    public static $placeholderHeaderImages = array();
+    /**
+     * @access public
+     * @var int
+     * @static
+     */
+    public static $ridInitTemplateCharts;
+    /**
+     * @access public
+     * @var string
+     * @static
+     */
+    public static $templateVariables = array();
+    /**
+     * @access public
+     * @var int
+     * @static
+     */
+    public static $totalTemplateCharts;
+    /**
+     * @access private
+     * @var string
+     * @static
+     */
+    private static $_chartsRelsChartXMLRels;
+    /**
+     * @access private
+     * @var string
+     * @static
+     */
+    private static $_contentTypes;
+    /**
+     * @access private
+     * @var string
+     * @static
+     */
+    private static $_document;
+    /**
+     * @access private
+     * @var array
+     * @static
+     */
+    private static $_footer = array();
+    /**
+     * @access private
+     * @var array
+     * @static
+     */
+    private static $_header = array();
+    /**
+     * @access private
+     * @var int
+     */
+    private $_idDOCX = 1;
+    /**
+     * @access private
+     * @var int
+     */
+    private $_idHTML = 1;
+    /**
+     * @access private
+     * @var int
+     */
+    private $_idMHT = 1;
+    /**
+     * @access private
+     * @var int
+     */
+    private $_idRTF = 1;
+    /**
+     * @access private
+     * @var CreateTemplate
+     * @static
+     */
+    private static $_instance = NULL;
+    /**
+     * @access private
+     * @var boolean
+     */
+    private $_isDOCX = false;
+    /**
+     * @access private
+     * @var boolean
+     */
+    private $_isHTML = false;
+    /**
+     * @access private
+     * @var boolean
+     */
+    private $_isMHT = false;
+    /**
+     * @access private
+     * @var boolean
+     */
+    private $_isRTF = false;
+    /**
+     * @access private
+     * @var string
+     * @static
+     */
+    private static $_numbering;
+    /**
+     * @access private
+     * @var string
+     * @static
+     */
+    private static $_relsDocumentXMLRels;
+    /**
+     * @access private
+     * @var string
+     * @static
+     */
+    private static $_styles;
+    /**
+     * @access private
+     * @var bool
+     * @static
+     */
+    private static $_template;
+    /**
+     * @access private
+     * @var string
+     * @static
+     */
+    private static $_templateGroupSymbol = '|';
+    /**
+     * @access private
+     * @var string
+     * @static
+     */
+    private static $_templateSymbol = '$';
+
+    /**
+     * Construct
+     *
+     * @access public
+     */
+    public function __construct()
+    {
+
+    }
+
+    /**
+     * Destruct
+     *
+     * @access public
+     */
+    public function __destruct()
+    {
+    }
+
+    /**
+     *
+     * @access public
+     * @return CreateTemplate
+     * @static
+     */
+    public static function getInstance()
+    {
+        if (self::$_instance == NULL) {
+            self::$_instance = new CreateTemplate();
+        }
+        return self::$_instance;
+    }
+
+    /**
+     * Check if DOCX is a template
+     *
+     * @access public
+     * @return boolean
+     * @static
+     */
+    public static function getBlnTemplate()
+    {
+        return self::$_template;
+    }
+
+    /**
+     * Return current document word
+     *
+     * @access public
+     * @return string
+     * @static
+     */
+    public static function getDocument()
+    {
+        return self::$_document;
+    }
+
+    /**
+     * Return current document footer
+     *
+     * @access public
+     * @return array
+     * @static
+     */
+    public static function getFooter()
+    {
+        return self::$_footer;
+    }
+
+    /**
+     * Return current document header
+     *
+     * @access public
+     * @return array
+     * @static
+     */
+    public static function getHeader()
+    {
+        return self::$_header;
+    }
+    /**
+     * Return current document word
+     *
+     * @access public
+     * @return string
+     * @static
+     */
+    public static function getNumbering()
+    {
+        return self::$_numbering;
+    }
+    /**
+     * Return current document styles
+     *
+     * @access public
+     * @return string
+     * @static
+     */
+    public static function getStyles()
+    {
+        return self::$_styles;
+    }
+    /**
+     * Getter. Return template group symbol
+     *
+     * @access public
+     * @return string
+     * @static
+     */
+    public static function getTemplateGroupSymbol()
+    {
+        return self::$_templateGroupSymbol;
+    }
+
+    /**
+     * Setter. Change if DOCX is a template
+     *
+     * @access public
+     * @return void
+     * @static
+     */
+    public static function setBlnTemplate($enable)
+    {
+        self::$_template = $enable;
+    }
+
+    /**
+     * Setter. Set template group symbol
+     *
+     * @access public
+     * @param string $templateSymbol
+     * @static
+     */
+    public static function setTemplateGroupSymbol($templateGroupSymbol)
+    {
+        self::$_templateGroupSymbol = $templateGroupSymbol;
+    }
+
+    /**
+     * Getter. Return template symbol
+     *
+     * @access public
+     * @return string
+     * @static
+     */
+    public static function getTemplateSymbol()
+    {
+        return self::$_templateSymbol;
+    }
+
+    /**
+     * Setter. Set template symbol
+     *
+     * @access public
+     * @param string $templateSymbol
+     * @static
+     */
+    public static function setTemplateSymbol($templateSymbol)
+    {
+        self::$_templateSymbol = $templateSymbol;
+    }
+
+    /**
+     * Getter. Return template Variables
+     *
+     * @access public
+     * @return array
+     * @static
+     */
+    public function getTemplateVariables()
+    {
+        return self::$templateVariables;
+    }
+
+    /**
+     * Setter. Set template Variables
+     *
+     * @access public
+     * @param array $templateVariables
+     * @static
+     */
+    public function setTemplateVariables($templateVariables)
+    {
+        self::$templateVariables = $templateVariables;
+    }
+
+    /**
+     * Return current rels document xml rels
+     *
+     * @access public
+     * @return string
+     * @static
+     */
+    public static function getRelsDocumentXMLRels()
+    {
+        return self::$_relsDocumentXMLRels;
+    }
+
+    /**
+     * Return current content types
+     *
+     * @access public
+     * @return string
+     * @static
+     */
+    public static function getContentTypes()
+    {
+        return self::$_contentTypes;
+    }
+
+    /**
+     * Add content types
+     *
+     * @access public
+     * @param string $args[0]
+     * @static
+     */
+    public static function addContentTypes()
+    {
+        $args = func_get_args();
+
+        if (strstr(self::$_contentTypes, 'Default Extension="xlsx"') &&
+            $args[0] == '<Default Extension="xlsx" ContentType="application' .
+                        '/octet-stream"> </Default>'
+        ) {
+            return;
+        }
+        //let´s check that tha content type does not exist yet
+        if((strpos(self::$_contentTypes, $args[0]) === false &&
+           strpos($args[0], 'Extension="jpg"') ===false) ||
+           (strpos($args[0], 'Extension="jpg"') !==false && 
+           strpos(self::$_contentTypes, 'Extension="jpg"') === false)){
+            $domContentTypes = new DomDocument();
+            $domContentTypes->loadXML(self::$_contentTypes);
+            $xmlTypes = $domContentTypes->getElementsByTagName('Types');
+            $xmlNewContentType = $domContentTypes->createDocumentFragment();
+            $xmlNewContentType->appendXML($args[0]);
+            $xmlTypes->item(0)->appendChild($xmlNewContentType);
+            self::$_contentTypes = $domContentTypes->saveXML();
+        }
+    }
+
+    /**
+     * Add relationship
+     *
+     * @access public
+     * @param string $args[0]
+     * @static
+     */
+    public static function addRelationship()
+    {
+        $args = func_get_args();
+
+        $domRelsDocumentXMLRels = new DomDocument();
+        $domRelsDocumentXMLRels->loadXML(self::$_relsDocumentXMLRels);
+        $xmlTypes = $domRelsDocumentXMLRels->getElementsByTagName(
+            'Relationships'
+        );
+        $xmlNewRelationship = $domRelsDocumentXMLRels->createDocumentFragment();
+        $xmlNewRelationship->appendXML($args[0]);
+        $xmlTypes->item(0)->appendChild($xmlNewRelationship);
+
+        self::$_relsDocumentXMLRels = $domRelsDocumentXMLRels->saveXML();
+    }
+    
+    /**
+     * Checks or unchecks a template checkbox
+     *
+     * @access public
+     * @param string $var variable name
+     * @param int $value
+     */
+    public function checkCheckbox($var, $value = 1)
+    {
+        $searchTerm = self::$_templateSymbol . $var . self::$_templateSymbol;
+        $domDocument = new DOMDocument();
+        $domDocument->loadXML(self::$_document);
+        $docXPath = new DOMXPath($domDocument);
+        $docXPath->registerNamespace('w', 'http://schemas.openxmlformats.org/wordprocessingml/2006/main');  
+        $docXPath->registerNamespace('w14', 'http://schemas.microsoft.com/office/word/2010/wordml'); 
+        //First we check for legacy checkboxes
+        $queryDoc = '//w:ffData[w:statusText[@w:val="' . $searchTerm . '"]]';
+        $affectedNodes = $docXPath->query($queryDoc);
+        foreach($affectedNodes as $node) {
+             $nodeVals = $node->getElementsByTagNameNS('http://schemas.openxmlformats.org/wordprocessingml/2006/main',
+                'default'); 
+             $nodeVals->item(0)->setAttribute('w:val', $value);
+        }
+        //Now we look for Word 2010 sdt checkboxes
+        $queryDoc = '//w:sdtPr[w:tag[@w:val="' . $searchTerm . '"]]';
+        $affectedNodes = $docXPath->query($queryDoc);
+        foreach($affectedNodes as $node) {
+             $nodeVals = $node->getElementsByTagNameNS('http://schemas.microsoft.com/office/word/2010/wordml',
+                'checked'); 
+             $nodeVals->item(0)->setAttribute('w14:val', $value);
+             //Now change the selected symbol for checked or unchecked
+             $sdt = $node->parentNode;
+             $txt = $sdt->getElementsByTagNameNS('http://schemas.openxmlformats.org/wordprocessingml/2006/main',
+                't');
+             if($value == 1){
+                $txt->item(0)->nodeValue = '☒';
+             }else{
+                $txt->item(0)->nodeValue = '☐';
+             }
+        }
+        
+        self::$_document = $domDocument->saveXML($domDocument->documentElement);
+    }
+
+
+    /**
+     * clear all the placeholders which start with 'BLOCK_'
+     *
+     * @access public
+     */
+    public static function deleteAllBlocks()
+    {
+        // Sometimes Word splits tags. Find and replace all of them with
+        // new string surrounded by template symbol value
+        $documentSymbol = explode(self::$_templateSymbol, self::$_document);
+        foreach ($documentSymbol as $documentSymbolValue) {
+            if (strpos(strip_tags($documentSymbolValue), 'BLOCK_') !== false) {
+                self::$_document = str_replace($documentSymbolValue, strip_tags($documentSymbolValue), self::$_document);
+            }
+        }
+        $domDocument = new DomDocument();
+        $domDocument->loadXML(self::$_document);
+
+        $xmlWP = $domDocument->getElementsByTagNameNS('http://schemas.openxmlformats.org/wordprocessingml/2006/main',
+                                                      'p');
+        $xpath = new DOMXPath($domDocument);
+        $length = $xmlWP->length;
+        $itemsWP = array();
+        for ($i = 0; $i < $length; $i++) {
+            $itemsWP[$i] = $xmlWP->item($i);
+        }
+        $query = 'w:r/w:t';
+        for ($i = 0; $i < $length; $i++) {
+            $variables = $xpath->query($query, $itemsWP[$i]);
+            $deleteCurrent = false;
+            foreach ($variables as $entry) {
+
+                if (
+                    strpos($entry->nodeValue,
+                           self::$_templateSymbol . 'BLOCK_'
+                    ) !== false
+                ) {
+                    //when we find a placeholder, we delete it
+                    $deleteCurrent = true;
+                    break;
+                }
+            }
+            if ($deleteCurrent) {
+                $padre = $itemsWP[$i]->parentNode;
+                $padre->removeChild($itemsWP[$i]);
+                self::$_document = $domDocument->saveXML();
+            }
+        }
+    }
+
+    /**
+     * Clear a specific placeholder which starts with 'BLOCK_'
+     *
+     * @access public
+     * @param string $blockName Block name
+     */
+    public function deleteBlock($blockName)
+    {
+        $aType = array('BLOCK_', 'TAB_'); //deletables types
+        foreach($aType as $type){
+            self::parseBlock($type . $blockName);
+            self::$_document = preg_replace('/\\'.self::$_templateSymbol.$type.$blockName.'([|]|\\'.self::$_templateSymbol.').*?\\'.self::$_templateSymbol.$type.$blockName.'.*?\\'.self::$_templateSymbol.'/', '', self::$_document);
+            /*$ini = strpos(self::$_document, self::$_templateSymbol . $type . $blockName . self::$_templateSymbol);
+            //CreateDocx::$log->info('borra bloque ' . $ini . '.');
+            if ($ini !== false) {
+                $end = strpos(self::$_document, self::$_templateSymbol . $type . $blockName . self::$_templateSymbol, $ini + 1);
+                if ($end !== false) {
+                    self::$_document = substr(self::$_document, 0, $ini) .
+                                       substr(self::$_document, $ini + (strlen(self::$_templateSymbol . $type . $blockName . self::$_templateSymbol) * 2) + $end);
+                }
+            }*/
+        }
+    }
+
+     /**
+     * extract the headers or the footers for the merging
+     *
+     * @access private
+     */
+    private function extractHeaderFooter($document, $relsWord, $type) {
+        $domDocument = new DomDocument();
+        $domDocument->loadXML($document);
+        //check if there are footers
+        $xmlWP = $domDocument->getElementsByTagNameNS('http://schemas.openxmlformats.org/wordprocessingml/2006/main', $type . 'Reference');
+        $length = $xmlWP->length;
+        $itemsWP = array();
+        $buenos = array();
+        for ($i = 0; $i < $length; $i++) {
+            if($xmlWP->item($i)->attributes->getNamedItem("type")->nodeValue == 'default'){
+                //only extract the footers or the headers which are used in document.xml
+                $itemsWP[$xmlWP->item($i)->attributes->getNamedItem("id")->nodeValue] = $xmlWP->item($i)->attributes->getNamedItem("type")->nodeValue;
+                $buenos[] = $xmlWP->item($i)->attributes->getNamedItem("id")->nodeValue;
+            }
+        }
+        $domDocument = new DomDocument();
+        $domDocument->loadXML($relsWord);
+        $xmlWP = $domDocument->getElementsByTagName('Relationship');
+        $length = $xmlWP->length;
+        $newfooters = array();
+        for ($i = 0; $i < $length; $i++) {
+            $aux = $xmlWP->item($i);
+            foreach ($buenos as $val) {
+                if ($aux->attributes->getNamedItem("Id")->nodeValue == $val) {
+                    //get the rId from the footers and headers
+                    $newfooters[$aux->attributes->getNamedItem("Target")->nodeValue]['rid'] = $aux->attributes->getNamedItem("Id")->nodeValue;
+                    $newfooters[$aux->attributes->getNamedItem("Target")->nodeValue]['node'] = $domDocument->saveXML($aux);
+                }
+            }
+        }
+        return $newfooters;
+    }
+
+    /**
+     * Modify the value of input fields
+     *
+     * @access public
+     * @param array $data with the key the anme of the variable and the value the value of the input text
+     *
+     */
+    public function modifyInputText($data)
+    {
+        $searchTerm = self::$_templateSymbol . $var . self::$_templateSymbol;
+        $domDocument = new DOMDocument();
+        $domDocument->loadXML(self::$_document);
+        $docXPath = new DOMXPath($domDocument);
+        $docXPath->registerNamespace('w', 'http://schemas.openxmlformats.org/wordprocessingml/2006/main');
+        $docXPath->registerNamespace('w14', 'http://schemas.microsoft.com/office/word/2010/wordml');
+        foreach($data as $var => $value){
+            //check for legacy checkboxes
+            $queryDoc = '//w:ffData[w:name[@w:val="' . $var . '"]]';
+            $affectedNodes = $docXPath->query($queryDoc);
+            foreach($affectedNodes as $node) {
+                //get the parent p Node
+                $pNode = $node->parentNode->parentNode->parentNode;
+                //we should take into account that there could be more than one field per paragraph
+                $preliminaryQuery = './/w:r[descendant::w:ffData and count(preceding-sibling::w:r[descendant::w:name[@w:val = "' . $var .'"]]) < 1]';
+                $previousInputs = $docXPath->query($preliminaryQuery, $pNode)->length;
+                $position = $previousInputs-1;
+                $query = './/w:r[count(preceding-sibling::w:r[descendant::w:fldChar[@w:fldCharType = "separate"]]) >= ' . ($position + 1);
+                $query .= ' and count(preceding-sibling::w:r[descendant::w:fldChar[@w:fldCharType = "end"]]) < ' . ($position + 1);
+                $query .= ' and not(descendant::w:fldChar)]';
+                $rNodes = $docXPath->query($query, $pNode);
+                $rCount = 0;
+                foreach($rNodes as $rNode){
+                    if($rCount == 0){
+                       $rNode->getElementsByTagName('t')->item(0)->nodeValue = $value;
+                    }else{
+                       $rNode->setAttribute('w:remove', 1);
+                    }
+                    $rCount++;
+                }
+                //remove the unwanted rNodes
+                $query = './/w:r[@w:remove="1"]';
+                $removeNodes = $docXPath->query($query, $pNode);
+                $length = $removeNodes->length;
+                for($j = $length-1; $j > -1; $j--){
+                    $removeNodes->item($j)->parentNode->removeChild($removeNodes->item($j));
+                }
+            }
+            //Now we look for Word 2010 sdt checkboxes
+            $queryDoc = '//w:sdtPr[w:tag[@w:val="' . $var . '"]]';
+            $affectedNodes = $docXPath->query($queryDoc);
+            foreach($affectedNodes as $node) {
+                 $sdtNode = $node->parentNode;
+                 $query = './/w:t[1]';
+                 $tNode = $docXPath->query($query, $sdtNode)->item(0)->nodeValue = $value;
+            }
+
+        }
+
+        self::$_document = $domDocument->saveXML($domDocument->documentElement);
+    }
+
+    /**
+     * Open current template
+     *
+     * @access public
+     * @param string $args[0]
+     * @static
+     */
+    public function openTemplate()
+    {
+        $args = func_get_args();
+
+        $this->objTemplate = new ZipArchive();
+
+        self::$path = $args[0];
+        self::$_template = 1;
+        $this->_idDOCX = 1;
+        $this->_idHTML = 1;
+        $this->_idMHT = 1;
+        $this->_idRTF = 1;
+        $this->_isDOCX = false;
+        $this->_isHTML = false;
+        $this->_isMHT = false;
+        $this->_isRTF = false;
+        $this->objTemplate->open(self::$path);
+
+        self::$_document = $this->objTemplate->getFromName('word/document.xml');       
+
+        if ($this->objTemplate->statName('word/_rels/document.xml.rels')) {
+            self::$_relsDocumentXMLRels = $this->objTemplate->getFromName(
+                'word/_rels/document.xml.rels'
+            );
+
+            $this->getCurrentRID();
+        }
+
+        if ($this->objTemplate->statName('word/charts/_rels/chart1.xml.rels')) {
+            self::$_chartsRelsChartXMLRels = $this->objTemplate->getFromName(
+                'word/charts/_rels/chart1.xml.rels'
+            );
+        }
+
+        if ($this->objTemplate->statName('[Content_Types].xml')) {
+            self::$_contentTypes = $this->objTemplate->getFromName(
+                '[Content_Types].xml'
+            );
+
+            // get headers
+            $xpathHeaders = new SimpleXMLElement(self::$_contentTypes);
+            $xpathHeaders->registerXPathNamespace('ns', 'http://schemas.openxmlformats.org/package/2006/content-types');
+            $xpathHeadersResults = $xpathHeaders->xpath('ns:Override[@ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.header+xml"]');
+            foreach ($xpathHeadersResults as $headersResults) {
+                self::$_header[substr($headersResults['PartName'], 1)] = $this->objTemplate->getFromName(
+                    substr($headersResults['PartName'], 1)
+                );
+            }
+
+            // get footers
+            $xpathFooters = new SimpleXMLElement(self::$_contentTypes);
+            $xpathFooters->registerXPathNamespace('ns', 'http://schemas.openxmlformats.org/package/2006/content-types');
+            $xpathFootersResults = $xpathFooters->xpath('ns:Override[@ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml"]');
+            foreach ($xpathFootersResults as $footersResults) {
+                self::$_footer[substr($footersResults['PartName'], 1)] = $this->objTemplate->getFromName(
+                    substr($footersResults['PartName'], 1)
+                );
+            }
+        }
+
+        if ($this->objTemplate->statName('word/charts/_rels/chart1.xml.rels')) {
+            self::$_chartsRelsChartXMLRels = $this->objTemplate->getFromName(
+                'word/charts/_rels/chart1.xml.rels'
+            );
+        }
+        if ($this->objTemplate->statName('word/styles.xml')) {
+            self::$_styles = $this->objTemplate->getFromName(
+                'word/styles.xml'
+            );
+        }
+        if ($this->objTemplate->statName('word/numbering.xml')) {
+            self::$_numbering = $this->objTemplate->getFromName(
+                'word/numbering.xml'
+            );
+        }else{
+            self::$_numbering = '';
+            $this->addRelationship('<Relationship Id="rI'.rand(9999999, 999999999).'" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/numbering" Target="numbering.xml" />');
+            $this->addContentTypes('<Override PartName="/word/numbering.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml" />
+');
+        }
+    }
+
+    /**
+     * Prepare the placeholder. Clear the wordXML code between the characters of the placeholder.
+     *
+     * @access public
+     * @param string $blockName Block name
+     */
+    public function parseBlock($blockName)
+    {
+        // Sometimes Word splits tags. Find and replace all of them with
+        $documentSymbol = explode(self::$_templateSymbol, self::$_document);
+        foreach ($documentSymbol as $documentSymbolValue) {
+            if (strip_tags($documentSymbolValue) == $blockName) {
+                self::$_document = str_replace($documentSymbolValue, $blockName, self::$_document);
+            }
+        }
+    }
+
+    /**
+     * prepares sections for merging
+     *
+     * @access public
+     */
+    public function prepareSections($document){
+        $domDocument = new DomDocument();
+        $domDocument->loadXML($document);
+        //check if there are footers
+        $xmlWSectPr = $domDocument->getElementsByTagNameNS(
+                        'http://schemas.openxmlformats.org/wordprocessingml/2006/main','sectPr');
+
+        $length = $xmlWSectPr->length;
+        //get the last section to modify
+        $itemsWSectPr = $xmlWSectPr->item($length -1);
+        $new = $itemsWSectPr->cloneNode(true);
+        $padre = $itemsWSectPr->parentNode;
+        $padre->removeChild($itemsWSectPr);
+
+
+        $xmlWP = $domDocument->getElementsByTagNameNS(
+                        'http://schemas.openxmlformats.org/wordprocessingml/2006/main','p');
+        $length = $xmlWP->length;
+        $itemsWP = $xmlWP->item($length - 1);
+        if($itemsWP->hasChildNodes()){
+            $existspPr = false;
+            $aSons = array();
+            foreach($itemsWP->childNodes as $hijo){
+                if($hijo->tagName == 'w:pPr'){
+                    $existspPr = true;
+                    foreach($hijo->childNodes as $nieto){
+                        if($nieto->tagName == 'w:sectPr'){
+                            $hijo->removeChild($nieto);
+                        }
+                    }
+                    $hijo->appendChild($new);
+                }else{
+                    $aSons[] = $hijo->cloneNode(true);
+                    $itemsWP->removeChild($hijo);
+                }
+            }
+            if(!$existspPr){
+                $node = $domDocument->createElement("w:pPr");
+                $node->appendChild($new);
+                $itemsWP->appendChild($node);
+                foreach($aSons as $val){
+                    $itemsWP->appendChild($val);
+                }
+            }
+        }else{
+            $node = $domDocument->createElement("w:pPr");
+            $node->appendChild($new);
+            $itemsWP->appendChild($node);
+        }
+        return $domDocument->saveXML();
+    }
+    
+    /**
+     * Removes the paragraph containing a variable and replaces it for a special altChunk tag
+     *
+     * @access public
+     * @param string $variableName
+     */
+    public function removeParentParagraph($variableName)
+    {
+        //Use XPath to find all paragraphs that include the variable name
+        $name = self::$_templateSymbol . $variableName . self::$_templateSymbol;
+        $domDocument = new DomDocument();
+        $domDocument->loadXML(self::$_document);
+        $xpath = new DOMXPath($domDocument);
+        $xpath->registerNamespace('w', 'http://schemas.openxmlformats.org/wordprocessingml/2006/main');
+        $query = '//w:p[w:r/w:t[text()[contains(.,"' . $variableName . '")]]]';
+        $affectedNodes = $xpath->query($query);
+        foreach($affectedNodes as $node){
+            $paragraphContents = $node->ownerDocument->saveXML($node);	
+            $paragraphText = strip_tags($paragraphContents);
+            if(($pos = strpos($paragraphText, $name, 0)) !== false){
+                //Insert a "fake node" that we can later remove
+                $alt = $domDocument->createElement('alternativeContent', $name);
+                $node->parentNode->insertBefore($alt, $node);
+                //If we remove a paragraph inside a table cell we need to take special care
+                if($node->parentNode->nodeName == 'w:tc'){
+                    $tcChilds = $node->parentNode->getElementsByTagNameNS('http://schemas.openxmlformats.org/wordprocessingml/2006/main','p');
+                    if($tcChilds->length > 1){
+                        $node->parentNode->removeChild($node);
+                    }else{
+                        $emptyP = $domDocument->createElement("w:p");
+                        $node->parentNode->appendChild($emptyP);
+                        $node->parentNode->removeChild($node);
+                    }
+                }else{
+                    $node->parentNode->removeChild($node);
+                }
+            }
+            
+        }
+        self::$_document = $domDocument->saveXML();
+        
+    }
+    
+    /**
+     * Removes a template variable with its container paragraph
+     *
+     * @access public
+     * @param string $variableName
+     * @param string $type
+     */
+    public function removeVariable($variableName)
+    {
+        // Sometimes Word splits tags. Find and replace all of them with
+        // new string surrounded by template symbol value
+        $documentSymbol =
+            explode(self::$_templateSymbol, self::$_document);
+        foreach ($documentSymbol as $documentSymbolValue) {
+            //ignore group [tag_name|group]
+            $tempSearch = explode('|', trim(strip_tags($documentSymbolValue)));
+            $tempSearch = $tempSearch[0];
+            if ($tempSearch == $variableName) {
+                $pos = strpos(self::$_document, $documentSymbolValue);
+                if ($pos !== false) {
+                    self::$_document  = substr_replace( self::$_document , $variableName, $pos, strlen($documentSymbolValue));
+                }
+            }
+        } 
+        //Use XPath to find all paragraphs that include the variable name
+        $name = self::$_templateSymbol . $variableName . self::$_templateSymbol;
+        $domDocument = new DomDocument();
+        $domDocument->loadXML(self::$_document);
+        $xpath = new DOMXPath($domDocument);
+        $xpath->registerNamespace('w', 'http://schemas.openxmlformats.org/wordprocessingml/2006/main');
+        $query = '//w:p[w:r/w:t[text()[contains(.,"' . $variableName . '")]]]';
+        $affectedNodes = $xpath->query($query);
+        foreach($affectedNodes as $node){
+            $paragraphContents = $node->ownerDocument->saveXML($node);	
+            $paragraphText = strip_tags($paragraphContents);
+            if(($pos = strpos($paragraphText, $name, 0)) !== false){
+                //If we remove a paragraph inside a table cell we need to take special care
+                if($node->parentNode->nodeName == 'w:tc'){
+                    $tcChilds = $node->parentNode->getElementsByTagNameNS('http://schemas.openxmlformats.org/wordprocessingml/2006/main','p');
+                    if($tcChilds->length > 1){
+                        $node->parentNode->removeChild($node);
+                    }else{
+                        $emptyP = $domDocument->createElement("w:p");
+                        $node->parentNode->appendChild($emptyP);
+                        $node->parentNode->removeChild($node);
+                    }
+                }else{
+                    $node->parentNode->removeChild($node);
+                }
+            }
+            
+        }
+        self::$_document = $domDocument->saveXML();
+    }
+
+    /**
+     * Replace chart in template
+     *
+     * @access public
+     * @param string $args[0]
+     * @static
+     */
+    public static function replaceChart()
+    {
+        $args = func_get_args();
+        $documentSymbol = explode(self::$_templateSymbol, self::$_document);
+        foreach ($documentSymbol as $documentSymbolValue) {
+            if (strip_tags($documentSymbolValue) == $args[0]) {
+                //self::$_document = str_replace($documentSymbolValue, strip_tags($documentSymbolValue), self::$_document);
+                $pos = strpos(self::$_document, $documentSymbolValue);
+                if ($pos !== false) {
+                    self::$_document  = substr_replace( self::$_document , strip_tags($documentSymbolValue), $pos, strlen($documentSymbolValue));
+                }
+            }
+        }
+
+        $domDocument = new DomDocument();
+        $domDocument->loadXML(self::$_document);
+
+        $xmlWP = $domDocument->getElementsByTagNameNS(
+            'http://schemas.openxmlformats.org/wordprocessingml/2006/main',
+            'p'
+        );
+        $xpath = new DOMXPath($domDocument);
+        $query = 'w:r/w:t';
+        for ($i = 0; $i < $xmlWP->length; $i++) {
+            $xmlGraphics = $xpath->query($query, $xmlWP->item($i));
+            foreach ($xmlGraphics as $entry) {
+                $pos = strpos($entry->nodeValue, self::$_templateSymbol.$args[0].self::$_templateSymbol);
+                if ($pos !== false) {
+                    $domChart = $entry->parentNode->parentNode;
+                    $xmlR = $domChart->getElementsByTagNameNS(
+                        'http://schemas.openxmlformats.org/wordprocessingml/' .
+                        '2006/main',
+                        'r'
+                    )->item(0);
+
+                    $domChart->removeChild($xmlR);
+                    $domVarChart = $domDocument->createElement(
+                        'varchart_' . CreateDocx::$intIdWord
+                    );
+                    $domChart->appendChild($domVarChart);
+                }
+            }
+        }
+        self::$_document = $domDocument->saveXML();
+        self::$totalTemplateCharts++;
+    }
+
+    /**
+     * Replace a placeholder with a checkbox
+     *
+     * @access public
+     * @param string checkName Checkbox variable name
+     * @param string $value Value
+     */
+    public function replaceCheckbox($checkName, $value)
+    {
+        self::parseBlock('CHECK_' . $checkName);
+        $domDocument = new DomDocument();
+        $domDocument->loadXML(self::$_document);
+
+        $xmlWP = $domDocument->getElementsByTagNameNS(
+            'http://schemas.openxmlformats.org/wordprocessingml/2006/main',
+            'p'
+        );
+        $xpath = new DOMXPath($domDocument);
+        $length = $xmlWP->length;
+        $itemsWP = array();
+        for ($i = 0; $i < $length; $i++) {
+            $itemsWP[$i] = $xmlWP->item($i);
+        }
+        $query = 'w:r/w:t';
+        for ($i = 0; $i < $length; $i++) {
+            $variables = $xpath->query($query, $itemsWP[$i]);
+            foreach ($variables as $entry) {
+                if (
+                    strpos($entry->nodeValue, self::$_templateSymbol . 'CHECK_' . $checkName . self::$_templateSymbol)
+                    !== false
+                ) {
+                    $entry->setAttribute('xml:space', 'preserve');
+                    $padre = $entry->parentNode->parentNode;
+                    $newNode = $domDocument->createElement('w:r', '');
+                    $newNode2 = $domDocument->createElement('w:sym', '');
+                    $newNode2->setAttribute('w:font', 'Wingdings');
+                    if ($value)
+                        $newNode2->setAttribute('w:char', 'F0FE');
+                    else
+                        $newNode2->setAttribute('w:char', 'F06F');
+                    $newNode->appendChild($newNode2);
+                    $padre->insertBefore($newNode, $entry->parentNode);
+
+                    break;
+                }
+            }
+        }
+        self::$_document = str_replace(self::$_templateSymbol . 'CHECK_' . $checkName . self::$_templateSymbol,
+                                       '', $domDocument->saveXML());
+    }
+
+    /**
+     * Replace image in headers
+     *
+     * @access public
+     * @param string $args[0]
+     * @param string $args[1]
+     * @static
+     */
+    public function replaceHeaderImage()
+    {
+        $args = func_get_args();
+
+        $domDocument = new DomDocument();
+        foreach (self::$_header as $key => $header) {
+            $domDocument->loadXML(self::$_header[$key]);
+            $domImages = $domDocument->getElementsByTagNameNS('http://schemas.openxmlformats.org/drawingml/2006/' .
+                                                              'wordprocessingDrawing', 'docPr');
+            $domImagesId = $domDocument->getElementsByTagNameNS(
+                'http://schemas.openxmlformats.org/drawingml/2006/main',
+                'blip'
+            );
+            for ($i = 0; $i < $domImages->length; $i++) {
+                if ($domImages->item($i)->getAttribute('descr') ==
+                    self::$_templateSymbol . $args[0] . self::$_templateSymbol) {
+                    $ind = $domImages->item($i)->parentNode
+                            ->getElementsByTagNameNS('http://schemas.openxmlformats.org/drawingml/2006/main', 'blip')
+                            ->item(0)->getAttribute('r:embed');
+                    //Now we search this id in header$i.xml.rels
+                    $keyNameArray = explode('/', $key);
+                    $keyName = $keyNameArray[1];
+                    if ($this->objTemplate->statName('word/_rels/'. $keyName.'.rels')) {
+                        $tempXMLRelsHeader = $this->objTemplate->getFromName('word/_rels/'. $keyName.'.rels');
+                        $domHeader = new DomDocument();
+                        $domHeader->loadXML($tempXMLRelsHeader);
+                        $domRelationships = $domHeader->getElementsByTagName('Relationship');
+                        foreach ($domRelationships as $domRelationship) {
+                            $id = $domRelationship->getAttribute('Id');
+                            if ($id == $ind) {
+                                self::$placeholderHeaderImages[$args[1]] = 'word/' . $domRelationship->getAttribute('Target');
+                            }
+                        }
+                    }
+                }
+            }
+         }
+     }
+
+     /**
+      * Replace images in the media folder for header images replacement
+      *
+      * @access public
+      * @param ZipArchive $docxTemplate
+      * @static
+      */
+    public static function replaceHeaderMediaImages(&$docxTemplate)
+    {
+        foreach (self::$placeholderHeaderImages as $key => $value) {
+            $docxTemplate->addFile($key,$value);
+        }
+     }
+
+    /**
+     * Replace image in template
+     *
+     * @access public
+     * @param string $args[0]
+     * @param string $args[1]
+     * @param string $args[2]
+     * @static
+     */
+    public function replaceImage()
+    {
+            $args = func_get_args();
+            $cx = 0;
+            $cy = 0;
+
+            //we get the name and extension of the replacement image
+            $imageNameArray = explode('/', $args[1]);
+            if(count($imageNameArray) > 1){
+                $imageName = array_pop($imageNameArray);
+            }else{
+                $imageName = $args[1];
+            }
+            $imageExtensionArray = explode('.', $args[1]);
+            $extension = strtolower(array_pop($imageExtensionArray));
+
+            $wordScaleFactor = 360000;
+            if(isset($args[2]['dpi'])){
+               $dpiX = $args[2]['dpi'];
+               $dpiY = $args[2]['dpi'];
+            }else{
+               if((isset($args[2]['width']) && $args[2]['width'] == 'auto')||
+                (isset($args[2]['height']) && $args[2]['height'] == 'auto')){
+               if($extension == 'jpg' || $extension == 'jpeg'){
+                   list($dpiX, $dpiY) = $this->getDpiJpg($args[1]);
+                }else if($extension == 'png'){
+                   list($dpiX, $dpiY) = $this->getDpiPng($args[1]);
+                }else{
+                   $dpiX = 96; 
+                   $dpiY = 96;
+                }
+               }
+            }
+
+
+            //we check if a width and height have been set
+            $width = 0;
+            $height = 0;
+            if(isset($args[2]['width']) && $args[2]['width'] != 'auto'){
+                $cx = (int) ($args[2]['width'] * $wordScaleFactor);
+            }
+            if(isset($args[2]['height']) && $args[2]['height'] != 'auto'){
+                $cy = (int) ($args[2]['height'] * $wordScaleFactor);
+            }
+            //We proceed to compute the sizes if the width or height are set to auto
+            if((isset($args[2]['width']) && $args[2]['width'] == 'auto')||
+                (isset($args[2]['height']) && $args[2]['height'] == 'auto')){
+               $realSize = getimagesize($args[1]); 
+            }
+            if(isset($args[2]['width']) && $args[2]['width'] == 'auto'){
+                $cx = (int) round($realSize[0] * 2.54 / $dpiX * $wordScaleFactor);
+            }
+            if(isset($args[2]['height']) && $args[2]['height'] == 'auto'){
+                $cy = (int) round($realSize[1] * 2.54 / $dpiY * $wordScaleFactor);
+            }
+
+            $domDocument = new DomDocument();
+            $domDocument->loadXML(self::$_document);
+
+            $domImages = $domDocument->getElementsByTagNameNS('http://schemas.openxmlformats.org/drawingml/2006/' .
+                                                              'wordprocessingDrawing', 'docPr');
+
+            for ($i = 0; $i < $domImages->length; $i++) {
+                    if ($domImages->item($i)->getAttribute('descr') ==
+                            self::$_templateSymbol . $args[0] . self::$_templateSymbol) {
+                            //create a new Id
+                            $ind = 'rId'.uniqid(true);
+                            //populate the reference array
+                            self::$placeholderImages[$ind] = $args[1];
+                            //generate new relationship
+                            $relString ='<Relationship Id="' . $ind . '" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/' . $imageName . '" />'; 
+                            $this->addRelationship($relString);
+                            //generate content type if it does not exist yet
+                            $ctString ='<Default Extension="' . $extension . '" ContentType="image/' . $extension . '"/>'; 
+                            $this->addContentTypes($ctString);
+                            //modify the image data to modify the r:embed attribute
+                            $domImages->item($i)->parentNode
+                            ->getElementsByTagNameNS('http://schemas.openxmlformats.org/drawingml/2006/main', 'blip')
+                            ->item(0)->setAttribute('r:embed', $ind);
+                            if($cx != 0){
+                              $domImages->item($i)->parentNode
+                                ->getElementsByTagNameNS('http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing', 'extent')
+                                ->item(0)->setAttribute('cx', $cx);  
+                              $domImages->item($i)->parentNode
+                                ->getElementsByTagNameNS('http://schemas.openxmlformats.org/drawingml/2006/main', 'ext')
+                                ->item(0)->setAttribute('cx', $cx);  
+                            }
+                            if($cy != 0){
+                              $domImages->item($i)->parentNode
+                                ->getElementsByTagNameNS('http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing', 'extent')
+                                ->item(0)->setAttribute('cy', $cy);  
+                              $domImages->item($i)->parentNode
+                                ->getElementsByTagNameNS('http://schemas.openxmlformats.org/drawingml/2006/main', 'ext')
+                                ->item(0)->setAttribute('cy', $cy);  
+                            }
+                            self::$_document = $domDocument->saveXML($domDocument->documentElement);
+                    }
+            }
+    }
+
+    /**
+     * Replace images in template
+     *
+     * @access public
+     * @param ZipArchive $docxTemplate
+     * @static
+     */
+    public static function replaceImages(&$docxTemplate)
+    {
+        foreach(self::$placeholderImages as $key => $value){
+            $imageNameArray = explode('/', $value);
+            if(count($imageNameArray) > 1){
+                $imageName = array_pop($imageNameArray);
+            }else{
+                $imageName = $value;
+            }
+            $docxTemplate->addFile($value,'word/media/' . $imageName);
+        }
+    }
+
+
+    /**
+     * Replace variables in template.
+     * Allows text strings and array of values as variables.
+     *
+     * @access public
+     * @param mixed $args[0]. Array or string
+     * @param mixed $args[1]
+     * @param mixed $args[2]. Optional. Settings template
+     */
+    public function replaceVariable()
+    {
+        $args = func_get_args();
+        $cloneDom = '';
+        $domParent = '';
+
+        if (is_string($args[0]) || $args[1] == 'table' || $args[1] == 'list') {
+            //TEMPORARY FIX for headers in tables
+            if(!isset($args[2]['header']) && !is_string($args[2])){
+                $args[2]['header'] = false;
+            }
+            // Sometimes Word splits tags. Find and replace all of them with
+            // new string surrounded by template symbol value
+            $documentSymbol =
+                explode(self::$_templateSymbol, self::$_document);
+            foreach ($documentSymbol as $documentSymbolValue) {
+                //ignore group [tag_name|group]
+                $tempSearch = explode('|', trim(strip_tags($documentSymbolValue)));
+                $tempSearch = $tempSearch[0];
+                if(is_array($args[0])){
+                    foreach($args[0] as $row){
+                        foreach($row as $var => $val){
+                            if ($tempSearch == $var) {
+                                /*self::$_document = str_replace(
+                                    $documentSymbolValue, $var, self::$_document
+                                );*/
+                                $pos = strpos(self::$_document, $documentSymbolValue);
+                                if ($pos !== false) {
+                                    self::$_document = substr_replace( self::$_document, $var, $pos, strlen($documentSymbolValue));
+                                }
+                            }
+                        }
+                    }
+                }else{
+                    if ($tempSearch == $args[0]) {
+                       /* self::$_document = str_replace(
+                            $documentSymbolValue, $args[0], self::$_document
+                        );*/
+                        $pos = strpos(self::$_document, $documentSymbolValue);
+                        if ($pos !== false) {
+                            self::$_document = substr_replace( self::$_document, $args[0], $pos, strlen($documentSymbolValue));
+                        }
+                    }
+                }
+                if(strpos($documentSymbolValue, 'xml:space="preserve"')){
+                    $preserve = true;
+                }
+            }
+            if(isset($preserve) && $preserve){
+               $query = '//w:t[text()[contains(., "' . self::$_templateSymbol . $args[0] . self::$_templateSymbol . '")]]'; 
+               $docDOM = new DOMDocument();
+               $docDOM->loadXML(self::$_document);
+               $docXPath = new DOMXPath($docDOM);
+               $docXPath->registerNamespace('w', 'http://schemas.openxmlformats.org/wordprocessingml/2006/main');
+               $affectedNodes = $docXPath->query($query);
+               foreach($affectedNodes as $node){
+                   $space = $node->getAttribute('xml:space');
+                   if(isset($space) && $space == 'preserve'){
+                      //Do nothing 
+                   }else{
+                       $str = $node->nodeValue;
+                       $firstChar = $str[0];
+                       if($firstChar == ' '){
+                           $node->nodeValue = substr($str, 1);
+                       }
+                       $node->setAttribute('xml:space', 'preserve');
+                   }
+               }
+               self::$_document = $docDOM->saveXML($docDOM->documentElement);
+            }
+
+            foreach (self::$_footer as $key => $footer) {
+                $documentSymbolFooter = explode(self::$_templateSymbol, self::$_footer[$key]);
+                foreach ($documentSymbolFooter as $documentSymbolValue) {
+                    if (strip_tags($documentSymbolValue) == $args[0]) {
+                        self::$_footer[$key] =
+                                str_replace($documentSymbolValue, $args[0], self::$_footer[$key]);
+                    }
+                }
+            }
+
+            foreach (self::$_header as $key => $header) {
+                $documentSymbolHeader = explode(self::$_templateSymbol, self::$_header[$key]);
+                foreach ($documentSymbolHeader as $documentSymbolValue) {
+                    if (strip_tags($documentSymbolValue) == $args[0]) {
+                        self::$_header[$key] =
+                            str_replace($documentSymbolValue, $args[0], self::$_header[$key]);
+                    }
+                }
+            }
+        }
+
+        // Replace VAR within DOCX.
+        if ($args[2] == 'docx' && is_string($args[0]) && is_string($args[1])) {
+            //In this case remove the "parent paragraph"
+            $this->removeParentParagraph($args[0]);
+            self::$_document = str_replace('<alternativeContent>', '', self::$_document);
+            self::$_document = str_replace('</alternativeContent>', '', self::$_document);
+            if (!$this->_isDOCX) {
+                $this->addContentTypes('<Default Extension="zip" ContentType="application/vnd.openxmlformats'
+                                       . '-officedocument.wordprocessingml.document.main+xml"> </Default>');
+                $this->_isDOCX = true;
+            }
+            $this->addRelationship('<Relationship Id="rDOCXId' . $this->_idDOCX .
+                                   '" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/' .
+                                   'aFChunk" Target="docx' . $this->_idDOCX .
+                                   '.zip" TargetMode="Internal"></Relationship>');
+            // add source and dest filepath
+            self::$embedFiles[] = array(
+                'src_file' => $args[1],
+                'dest_file' => 'docx' . $this->_idDOCX . '.zip'
+            );
+            $args[1] = '<' . CreateElement::NAMESPACEWORD . ':altChunk r:id="rDOCXId' . $this->_idDOCX . '" ' .
+                       'xmlns:r="http://schemas.openxmlformats.org/' . 'officeDocument/2006/relationships" ' .
+                       'xmlns:w="http://schemas.openxmlformats.org/' . 'wordprocessingml/2006/main" />';
+            $this->_idDOCX++;
+        }
+
+        // Replace VAR within MHT.
+        if ($args[2] == 'mht' && is_string($args[0]) && is_string($args[1])) {
+            //In this case remove the "parent paragraph"
+            $this->removeParentParagraph($args[0]);
+            self::$_document = str_replace('<alternativeContent>', '', self::$_document);
+            self::$_document = str_replace('</alternativeContent>', '', self::$_document);
+            if (!$this->_isMHT) {
+                $this->addContentTypes('<Default Extension="mht" ContentType="message/rfc822"> </Default>');
+                $this->_isMHT = true;
+            }
+            $this->addRelationship('<Relationship Id="rMHTId' . $this->_idMHT .
+                                   '" Type="http://schemas.openxmlformats.org/officeDocument/2006/' .
+                                   'relationships/aFChunk" Target="mht' . $this->_idMHT .
+                                   '.mht" TargetMode="Internal"></Relationship>');
+            // add source string and dest filepath
+            self::$embedFiles[] = array(
+                'src_file' => $args[1],
+                'dest_file' => 'mht' . $this->_idMHT . '.mht'
+            );
+            $args[1] = '<' . CreateElement::NAMESPACEWORD . ':altChunk r:id="rMHTId' . $this->_idMHT . '" ' .
+                       'xmlns:r="http://schemas.openxmlformats.org/' . 'officeDocument/2006/relationships" ' .
+                       'xmlns:w="http://schemas.openxmlformats.org/' . 'wordprocessingml/2006/main" />';
+            $this->_idMHT++;
+        }
+
+        // Replace VAR within HTML.
+        if ($args[2] == 'html' && is_string($args[0]) && is_string($args[1])) {
+            //In this case remove the "parent paragraph"
+            $this->removeParentParagraph($args[0]);
+            self::$_document = str_replace('<alternativeContent>', '', self::$_document);
+            self::$_document = str_replace('</alternativeContent>', '', self::$_document);
+            if (!$this->_isHTML) {
+                $this->addContentTypes('<Default Extension="htm" ContentType="application/xhtml+xml"> </Default>');
+                $this->_isHTML = true;
+            }
+            $this->addRelationship('<Relationship Id="rHTMLId' . $this->_idHTML .
+                                   '" Type="http://schemas.openxmlformats.org/officeDocument/2006/' .
+                                   'relationships/aFChunk" Target="html' . $this->_idHTML .
+                                   '.htm" TargetMode="Internal"></Relationship>');
+            // add source string and dest filepath
+            self::$embedFiles[] = array(
+                'src_string' => '<html>' . $args[1] . '</html>',
+                'dest_file' => 'html' . $this->_idHTML . '.htm'
+            );
+            $args[1] = '<' . CreateElement::NAMESPACEWORD . ':altChunk r:id="rHTMLId' . $this->_idHTML . '" ' .
+                       'xmlns:r="http://schemas.openxmlformats.org/' . 'officeDocument/2006/relationships" ' .
+                       'xmlns:w="http://schemas.openxmlformats.org/' . 'wordprocessingml/2006/main" />';
+            $this->_idHTML++;
+        }
+
+        // Replace VAR within an image.
+        if ($args[2] == 'image' && is_string($args[0]) && is_string($args[1])) {
+            //In this case remove the "parent paragraph"
+            $this->removeParentParagraph($args[0]);
+            self::$_document = str_replace('<alternativeContent>', '', self::$_document);
+            self::$_document = str_replace('</alternativeContent>', '', self::$_document);
+            // transform image to MHT file to embed it
+            $imageToMHT = new MhtFileMaker();
+            list($imgWidth, $imgHeight, $imgType, $imgAttr) = getimagesize($args[1]);
+            $imageToMHT->AddContents('file:///C:/2673C891/Doc1.htm', 'text/html; charset="us-ascii"', chunk_split('<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http://www.w3.org/TR/REC-html40"><head></head><body lang=3DEN-US style=3D\'tab-interval:36.0pt\'><div class=3DSection1><p class=3DMsoNormal><span style=3D\'mso-no-proof:yes\'><!--[if gte vml 1]><v=:shapetype id=3D"_x0000_t75" coordsize=3D"21600,21600" o:spt=3D"75" o:preferrelative==3D"t" path=3D"m@4@5l@4@11@9@11@9@5xe" filled=3D"f" stroked=3D"f"> <v:stroke joinstyle=3D"miter"/> <v:formulas><v:f eqn=3D"if lineDrawn pixelLineWidth 0"/><v:f eqn=3D"sum @0 1 0"/><v:f eqn=3D"sum 0 0 @1"/><v:f eqn=3D"prod @2 1 2"/><v:f eqn=3D"prod @3 21600 pixelWidth"/><v:f eqn=3D"prod @3 21600 pixelHeight"/><v:f eqn=3D"sum @0 0 1"/><v:f eqn=3D"prod @6 1 2"/><v:f eqn=3D"prod @7 21600 pixelWidth"/><v:f eqn=3D"sum @8 21600 0"/><v:f eqn=3D"prod @7 21600 pixelHeight"/><v:f eqn=3D"sum @10 21600 0"/></v:formulas><v:path o:extrusionok=3D"f" gradientshapeok=3D"t" o:connecttype=3D"rect"/><o:lock v:ext=3D"edit" aspectratio=3D"t"/></v:shapetype><v:shape id=3D"Picture_x0020_1" o:spid=3D"_x0000_i1025" type=3D"#_x0000_t75" style=3D\'width:' . $imgWidth . 'pt;height:' . $imgHeight . 'pt;visibility:visible;mso-wrap-style:square\'><v:imagedata src=3D"Doc1_files/image001.' . $imageToMHT->GetExtension($args[1]) . '" o:title=3D""/></v:shape><![endif]--></span></p></div></body></html>', 5000), 'quoted-printable');
+            $imageToMHT->AddFile($args[1]);
+            if (!$this->_isMHT) {
+                $this->addContentTypes('<Default Extension="mht" ContentType="message/rfc822"> </Default>');
+                $this->_isMHT = true;
+            }
+            $this->addRelationship('<Relationship Id="rMHTId' . $this->_idMHT .
+                                   '" Type="http://schemas.openxmlformats.org/officeDocument/2006/' .
+                                   'relationships/aFChunk" Target="mht' . $this->_idMHT .
+                                   '.mht" TargetMode="Internal"></Relationship>');
+            // add source string and dest filepath
+            self::$embedFiles[] = array(
+                'src_string' => $imageToMHT->GetFile(),
+                'dest_file' => 'mht' . $this->_idMHT . '.mht'
+            );
+            $args[1] = '<' . CreateElement::NAMESPACEWORD . ':altChunk r:id="rMHTId' . $this->_idMHT . '" ' .
+                       'xmlns:r="http://schemas.openxmlformats.org/' . 'officeDocument/2006/relationships" ' .
+                       'xmlns:w="http://schemas.openxmlformats.org/' . 'wordprocessingml/2006/main" />';
+            $this->_idMHT++;
+        }
+
+        // Replace VAR within RTF.
+        if ($args[2] == 'rtf' && is_string($args[0]) && is_string($args[1])) {
+            //In this case remove the "parent paragraph"
+            $this->removeParentParagraph($args[0]);
+            self::$_document = str_replace('<alternativeContent>', '', self::$_document);
+            self::$_document = str_replace('</alternativeContent>', '', self::$_document);
+            if (!$this->_isRTF) {
+                $this->addContentTypes('<Default Extension="rtf" ContentType="application/rtf"> </Default>');
+                $this->_isRTF = true;
+            }
+            $this->addRelationship('<Relationship Id="rRTFId' . $this->_idRTF .
+                                   '" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/' .
+                                   'aFChunk" Target="rtf' . $this->_idRTF . '.rtf" TargetMode="Internal">' .
+                                   '</Relationship>');
+            // add source and dest filepath
+            self::$embedFiles[] = array(
+                'src_file' => $args[1],
+                'dest_file' => 'rtf' . $this->_idRTF . '.rtf'
+            );
+            $args[1] = '<' . CreateElement::NAMESPACEWORD .
+                       ':altChunk r:id="rRTFId' . $this->_idRTF . '" ' .
+                       'xmlns:r="http://schemas.openxmlformats.org/' .
+                       'officeDocument/2006/relationships" ' .
+                       'xmlns:w="http://schemas.openxmlformats.org/' .
+                       'wordprocessingml/2006/main" />';
+            $this->_idRTF++;
+        }
+
+        // Only lists and tables are supported.
+        if (($args[1] == 'list' || $args[1] == 'table') && is_array($args[0])) {
+            $domDocument = new DomDocument();
+            $domDocument->loadXML(self::$_document);
+
+            $xmlWP = $domDocument->getElementsByTagNameNS(
+                'http://schemas.openxmlformats.org/wordprocessingml/2006/main',
+                'p'
+            );
+            $xpath = new DOMXPath($domDocument);
+            $query = 'w:r/w:t';
+            $length = $xmlWP->length;
+            $itemsWP = array();
+            for ($i = 0; $i < $length; $i++) {
+                $itemsWP[$i] = $xmlWP->item($i);
+            }
+            for ($i = 0; $i < $length; $i++) {
+                $variables = $xpath->query($query, $itemsWP[$i]);
+                foreach ($variables as $entry) {
+                    if (isset($args[2]['header'])) {
+                        foreach ($args[0] as $valuesArray) {
+                            foreach ($valuesArray as $keys => $values) {
+                                if (empty($entry->nodeValue)) {
+                                    continue;
+                                }
+                                if (
+                                    strpos(
+                                        $entry->nodeValue,
+                                        self::$_templateSymbol . $keys .
+                                        self::$_templateSymbol
+                                    ) !== false
+                                ) {
+                                    if ($args[1] == 'list') {
+                                        $domP = $entry->parentNode->parentNode;
+                                        $domParent = $entry->parentNode->
+                                        parentNode->parentNode;
+                                        $cloneDom = $entry->
+                                        parentNode->parentNode->cloneNode(true);
+                                        try {
+                                            $domP->parentNode->insertBefore(
+                                                $cloneDom, $domP
+                                            );
+                                        }
+                                        catch (Exception $e) {
+                                            CreateDocx::$log->fatal(
+                                                $e->getMessage()
+                                            );
+                                            exit();
+                                        }
+                                    } elseif ($args[1] == 'table') {
+                                        $domTR = $entry->parentNode->
+                                        parentNode->parentNode->
+                                        parentNode;
+                                        if (
+                                            $entry->parentNode->
+                                            parentNode->parentNode->
+                                            parentNode->nodeName == 'w:tr'
+                                        ) {
+                                            $domParent = $entry->parentNode->
+                                            parentNode->parentNode->
+                                            parentNode->parentNode;
+                                            $cloneDom = $entry->parentNode->
+                                            parentNode->parentNode->
+                                            parentNode->cloneNode(true);
+                                            try {
+                                                $domTR->parentNode->insertBefore(
+                                                    $cloneDom, $domTR
+                                                );
+                                            }
+                                            catch (Exception $e) {
+                                                CreateDocx::$log->fatal(
+                                                    $e->getMessage()
+                                                );
+                                                exit();
+                                            }
+                                        }
+                                    }
+                                }
+                                /* Only the first key is needed to iterate over
+                                 * DOM and clone the required nodes.
+                                 */
+                                break;
+                            }
+                        }
+                    } else {
+                        if ($args[1] == 'list') {
+                            $domP = $entry->parentNode->parentNode;
+                            $domParent = $entry->parentNode->
+                            parentNode->parentNode;
+                            $cloneDom = $entry->
+                            parentNode->parentNode->cloneNode(true);
+                            try {
+                                $domP->parentNode->insertBefore(
+                                    $cloneDom, $domP
+                                );
+                            }
+                            catch (Exception $e) {
+                                CreateDocx::$log->fatal(
+                                    $e->getMessage()
+                                );
+                                exit();
+                            }
+                        } elseif ($args[1] == 'table') {
+                            $domTR = $entry->parentNode->
+                            parentNode->parentNode->
+                            parentNode;
+                            if (
+                                $entry->parentNode->
+                                parentNode->parentNode->
+                                parentNode->nodeName == 'w:tr'
+                            ) {
+                                $domParent = $entry->parentNode->
+                                parentNode->parentNode->
+                                parentNode->parentNode;
+                                $cloneDom = $entry->parentNode->
+                                parentNode->parentNode->
+                                parentNode->cloneNode(true);
+                                try {
+                                    $domTR->parentNode->insertBefore(
+                                        $cloneDom, $domTR
+                                    );
+                                }
+                                catch (Exception $e) {
+                                    CreateDocx::$log->fatal(
+                                        $e->getMessage()
+                                    );
+                                    exit();
+                                }
+                            }
+                        }
+                        /* Only the first key is needed to iterate over
+                         * DOM and clone the required nodes.
+                         */
+                        break;
+                    }
+                }
+            }
+            /* A last element is created due to number of values plus the first
+             *  used as placeholder. Just remove it.
+             */
+            if (is_object($domParent)) {
+                $domParent->removeChild($cloneDom);
+            }
+            self::$_document = $domDocument->saveXML();
+        }
+
+        // Iterate text array.
+        if (is_string($args[0]) && is_array($args[1])) {
+            $domDocument = new DomDocument();
+            $domDocument->loadXML(self::$_document);
+
+            $xmlWP = $domDocument->getElementsByTagNameNS(
+                'http://schemas.openxmlformats.org/wordprocessingml/2006/main',
+                'p'
+            );
+            $xpath = new DOMXPath($domDocument);
+            $query = 'w:r/w:t';
+            $length = $xmlWP->length;
+            $itemsWP = array();
+            for ($i = 0; $i < $length; $i++) {
+                $itemsWP[$i] = $xmlWP->item($i);
+            }
+            for ($i = 0; $i < $length; $i++) {
+                $variables = $xpath->query($query, $itemsWP[$i]);
+                foreach ($variables as $entry) {
+                    foreach ($args[1] as $values) {
+                        if (
+                            self::$_templateSymbol . $args[0] .
+                            self::$_templateSymbol ==
+                            $entry->nodeValue
+                            && $entry->nodeValue != self::$_templateSymbol
+                        ) {
+                            $domP = $entry->parentNode->parentNode;
+                            $domParent = $entry->parentNode->
+                            parentNode->parentNode;
+                            $cloneDom = $entry->
+                            parentNode->parentNode->cloneNode(true);
+                            try {
+                                $domP->parentNode->insertBefore(
+                                    $cloneDom, $domP
+                                );
+                            }
+                            catch (Exception $e) {
+                                CreateDocx::$log->fatal(
+                                    $e->getMessage()
+                                );
+                                exit();
+                            }
+                        }
+                    }
+                }
+            }
+            /* A last element is created due to number of values plus the first
+             *  used as placeholder. Just remove it.
+             */
+            if (is_object($domParent)) {
+                $domParent->removeChild($cloneDom);
+            }
+            self::$_document = $domDocument->saveXML();
+        }
+
+        if (is_string($args[0])) {
+            // Text string or array of texts
+            if (is_string($args[1])) {
+                // if text string escape chars
+                if (empty($args[2])) {
+                    $args[1] = htmlspecialchars($args[1]);
+                }
+                // Single text string
+                self::$_document = str_replace(
+                    self::$_templateSymbol . $args[0]
+                    . self::$_templateSymbol,
+                    self::processFields($args[0], $args[1]),
+                    self::$_document
+                );
+                foreach (self::$_footer as $key => $footer) {
+                    self::$_footer[$key] = str_replace(self::$_templateSymbol . $args[0] . self::$_templateSymbol,
+                                                     self::processFields($args[0], $args[1]), $footer);
+                }
+                foreach (self::$_header as $key => $header) {
+                    self::$_header[$key] = str_replace(self::$_templateSymbol . $args[0] . self::$_templateSymbol,
+                                                     self::processFields($args[0], $args[1]), $header);
+                }
+            } elseif (is_array($args[1])) {
+                // Text array
+                foreach ($args[1] as $values) {
+                    // if text string escape chars
+                    if (empty($args[2])) {
+                        $values = htmlspecialchars($values);
+                    }
+                    self::$_document = preg_replace(
+                        '/\\' . self::$_templateSymbol . $args[0]
+                        . '\\' . self::$_templateSymbol . '/',
+                        $values,
+                        self::$_document,
+                        1
+                    );
+                    foreach (self::$_footer as $key => $footer) {
+                        self::$_footer[$key] = preg_replace('/\\' . self::$_templateSymbol . $args[0] . '\\' .
+                                                          self::$_templateSymbol . '/', $values, $footer, 1);
+                    }
+                    foreach (self::$_header as $key => $header) {
+                        self::$_header[$key] = preg_replace('/\\' . self::$_templateSymbol . $args[0] . '\\' .
+                                                      self::$_templateSymbol . '/', $values, $header, 1);
+                    }
+                }
+            }
+        } elseif (is_array($args[0])) {
+            // List or table
+            foreach ($args[0] as $values) {
+                foreach ($values as $keys => $textValue) {
+                    // escape chars
+                    $textValue = htmlspecialchars($textValue);
+                    $documentSymbol =
+                        explode(self::$_templateSymbol, self::$_document);
+                    /*foreach ($documentSymbol as $documentSymbolValue) {
+                        if (strip_tags($documentSymbolValue) == $keys) {
+                            self::$_document = str_replace(
+                                $documentSymbolValue, $keys, self::$_document
+                            );
+                        }
+                    }*/
+                    self::$_document = preg_replace(
+                        '/\\' . self::$_templateSymbol . $keys . '\\' .
+                        self::$_templateSymbol . '/',
+                        $textValue,
+                        self::$_document,
+                        1
+                    );
+                    foreach (self::$_footer as $key => $footer) {
+                        self::$_footer[$key] = preg_replace('/\\' . self::$_templateSymbol . $keys . '\\' .
+                                                      self::$_templateSymbol . '/', $textValue, $footer, 1);
+                    }
+                    foreach (self::$_header as $key => $header) {
+                        self::$_header[$key] = preg_replace('/\\' . self::$_templateSymbol . $keys . '\\' .
+                                                      self::$_templateSymbol . '/', $textValue, $header, 1);
+                    }
+                }
+            }
+        }
+    }
+
+    /**
+     * Replace variables in template by HTML.
+     *
+     * @access public
+     * @param $var variable to be replaced
+     * @param $type, inline or block
+     * @param $wordHTML the world chunck generated out of HTML that we want to insert
+     */
+    public function replaceVariableByHTML($var, $type, $wordHTML)
+    {
+        // Sometimes Word splits tags. Find and replace all of them with
+        // new string surrounded by template symbol value
+        $documentSymbol = explode(self::$_templateSymbol, self::$_document);
+        foreach ($documentSymbol as $documentSymbolValue) {
+            //ignore group [tag_name|group]
+            $tempSearch = explode('|', trim(strip_tags($documentSymbolValue)));
+            $tempSearch = $tempSearch[0];
+
+            if ($tempSearch == $var) {
+               /* self::$_document = str_replace(
+                    $documentSymbolValue, $var, self::$_document
+                );*/
+                $pos = strpos(self::$_document, $documentSymbolValue);
+                if ($pos !== false) {
+                    self::$_document = substr_replace( self::$_document, $var, $pos, strlen($documentSymbolValue));
+                }
+            }
+        }
+
+        $searchString= self::$_templateSymbol;
+        $searchVariable = self::$_templateSymbol.$var.self::$_templateSymbol;
+
+        $docDOM = new DOMDocument();
+        $docDOM->loadXML(self::$_document);
+
+        $docXpath = new DOMXPath($docDOM);
+        $query= '//w:p[w:r/w:t[text()[contains(., "'.$searchString.'")]]]';
+
+        $docNodes = $docXpath->query($query);
+
+        foreach ($docNodes as $node){
+            $nodeText = $node->ownerDocument->saveXML($node);
+            $cleanNodeText = strip_tags($nodeText);
+            if (strpos($cleanNodeText, $searchVariable) !== false){
+                if($type == 'block'){
+                    $cursorNode = $docDOM->createElement('cursorHTML');
+                    //We should take care of the case that WordHTML is empty and inside a table cell (fix word bug empty cells)
+                    if($wordHTML == '' && $node->parentNode->nodeName == 'w:tc') $wordHTML = '<w:p />';
+                    $node->parentNode->insertBefore($cursorNode, $node);
+                    $node->parentNode->removeChild($node);
+                }else if($type == 'inline'){
+                    $textNode = $node->ownerDocument->saveXML($node);
+                    $textChunks = explode($searchString, $textNode);
+                    $limit = count($textChunks);
+                    for ($j = 0; $j < $limit; $j++) {
+                      $cleanValue = strip_tags($textChunks[$j]);
+                      if ($cleanValue == $var){
+                          $textChunks[$j] = '</w:t></w:r><cursorHTML/><w:r><w:t xml:space="preserve">';
+                      }
+                    }
+                    $newNodeText = implode($searchString,$textChunks);
+                    $newNodeText =str_replace(self::$_templateSymbol . '</w:t></w:r><cursorHTML/><w:r><w:t xml:space="preserve">', '</w:t></w:r><cursorHTML/><w:r><w:t xml:space="preserve">', $newNodeText);
+                    $newNodeText =str_replace('</w:t></w:r><cursorHTML/><w:r><w:t xml:space="preserve">' . self::$_templateSymbol, '</w:t></w:r><cursorHTML/><w:r><w:t xml:space="preserve">', $newNodeText);
+                    $tempDoc = new DOMDocument();
+                    $tempDoc->loadXML('<w:root xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" >'.$newNodeText.'</w:root>');
+                    $newCursorNode = $tempDoc->documentElement->firstChild;
+                    $cursorNode = $docDOM->importNode($newCursorNode, true);
+                    $node->parentNode->insertBefore($cursorNode, $node);
+                    $node->parentNode->removeChild($node);
+                }
+            }
+        }
+        self::$_document = $docDOM->saveXML();
+        self::$_document = str_replace('<cursorHTML/>', $wordHTML, self::$_document);
+    }
+
+    public static function reset() {
+        self::setBlnTemplate(false);
+        self::$embedFiles = array();
+        self::$placeholderImages = array();
+        self::$path = '';
+        self::$ridInitTemplateCharts = '';
+        self::$templateVariables = array();
+        self::$totalTemplateCharts = '';
+        self::$_chartsRelsChartXMLRels = '';
+        self::$_contentTypes = '';
+        self::$_document = '';
+        self::$_footer = array();
+        self::$_header = array();
+        self::$_relsDocumentXMLRels = '';
+        self::$_template = '';
+    }
+
+    /**
+     * Takes care of the links and images asociated with an HTML chunck processed
+     * by the embedHTML method in the case of a Template
+     *
+     * @access public
+     * @param array $sFinalDocX an arry with the required link and image data
+     */
+    public function TemplateHTMLRels($sFinalDocX, $options, $pathToBaseTemplate)
+    {
+        foreach ($sFinalDocX[1] as $key => $value) {
+          $this->addRelationship('<Relationship Id="'.$key.'" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink" Target="'.$value.'" TargetMode="External"></Relationship>');
+        }
+
+        $relsImages = '';
+        foreach ($sFinalDocX[2] as $key => $value) {
+          $tempArray = explode('?', $value);
+          $value = array_shift($tempArray);//We just get the photo path
+          if(isset($options['downloadImages']) && $options['downloadImages']) {
+              //$photo = file_get_contents($value);
+              $arrayExtension = explode('.', $value);
+              $extension = strtolower(array_pop($arrayExtension));
+              $this->addContentTypes('<Default Extension="'.$extension.'" ContentType="image/'.$extension.'"/>');
+              $this->addRelationship('<Relationship Id="'.$key.'" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/img'.$key.'.'.$extension.'" />');
+          }else{
+              $this->addRelationship('<Relationship Id="'.$key.'" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="'.$value.'" TargetMode="External" />');
+          }
+        }
+    }
+
+    /**
+     * Replace variable char in template
+     *
+     * @access public
+     * @param string $args[0]
+     * @static
+     */
+    public static function replaceVariableChart($chart, $i)
+    {
+        $chart = str_replace('<w:p>', '', $chart);
+        $chart = str_replace('</w:p>', '', $chart);
+        self::$_document = str_replace(
+            '<varchart_' . $i . '/>',
+            $chart,
+            self::$_document
+        );
+    }
+    /**
+     * Get image jpg dpi
+     *
+     * @access private
+     * @param string $filename
+     * @return array
+     */
+    private function getDpiJpg($filename)
+    {
+        $a = fopen($filename, 'r');
+        $string = fread($a, 20);
+        fclose($a);
+        $type = hexdec(bin2hex(substr($string, 13, 1)));
+        $data = bin2hex(substr($string, 14, 4));
+        if($type == 1){
+           $x = substr($data, 0, 4);
+           $y = substr($data, 4, 4);
+           return array(hexdec($x), hexdec($y)); 
+        }else if($type == 2){
+           $x = floor(hexdec(substr($data, 0, 4))/2.54);
+           $y = floor(hexdec(substr($data, 4, 4))/2.54);
+           return array($x, $y);
+        }else{
+           return array(96, 96);
+        }
+    }
+
+    /**
+     * Get image png dpi
+     *
+     * @access private
+     * @param string $filename
+     * @return array
+     */
+    private function getDpiPng($filename)
+    {
+        $pngScaleFactor = 29.5;
+        $a = fopen($filename, 'r');
+        $string = fread($a, 1000);
+        $aux = strpos($string, 'pHYs');
+        if ($aux > 0){
+            $type = hexdec(bin2hex(substr($string, $aux + strlen('pHYs')+ 16, 1)));
+        }
+        if ($aux >0 && $type = 1){
+            $data = bin2hex(substr($string, $aux + strlen('pHYs'), 16));
+            fclose($a);
+            $x = substr($data, 0, 8);
+            $y = substr($data, 8, 8);
+            return array(round(hexdec($x)/$pngScaleFactor), round(hexdec($y)/$pngScaleFactor));
+        }else{
+            return array(96, 96);   
+        }
+    }
+
+    /**
+     * Process template variables before sustitution in template
+     *
+     * @access private
+     * @param string $name Variable name
+     * @param string $value Variable value
+     */
+    private function processFields($name, $value){
+        $ret = $value;
+
+        if(strpos(strtolower($name), 'numbering') === 0){
+            if(!isset($aNameCounts)){
+                static $aNameCounts = array();
+            }
+
+            $aAuxNums = array();
+
+            switch($value){
+                case '1,2,3':
+                    $aAuxNums = 1;
+                    break;
+                case 'I,II,III':
+                    $aAuxNums = array('I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII','XIV','XV','XVI','XVII','XVIII','XIX','XX','XXI','XXII','XXIII','XXIV','XXV','XXVI','XXVII','XXVIII','XXIX','XXX');
+                    break;
+                case 'A,B,C':
+                    $aAuxNums = array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');
+                    break;
+                default:
+                    if(strpos($value, ',') === false){
+                        if(is_numeric($value)) $aAuxNums = $value;
+                        else $aAuxNums = 1;
+                    }
+                    else $aAuxNums = explode(',', $value);
+            }
+
+            if(!isset($aNameCounts[$name])){
+                $aNameCounts[$name] = 0;
+                if(is_array($aAuxNums)) $ret = $aAuxNums[$aNameCounts[$name]];
+                else{
+                    $aNameCounts[$name] += $aAuxNums;
+                    $ret = $aNameCounts[$name];
+                }
+            }
+            else{
+                if(is_array($aAuxNums)){
+                    $aNameCounts[$name]++;
+                    $ret = $aAuxNums[$aNameCounts[$name]%count($aAuxNums)];
+                }
+                else{
+                    $aNameCounts[$name] += $aAuxNums;
+                    $ret = $aNameCounts[$name];
+                }
+            }
+        }
+
+        return($ret);
+    }
+
+    /**
+     * Return template variables
+     *
+     * @access public
+     * @return array
+     */
+    public function returnAllVariables()
+    {
+        $variables = array();
+
+        $documentSymbol = explode(self::$_templateSymbol, self::$_document);
+        $i = 0;
+        foreach ($documentSymbol as $documentSymbolValue) {
+            // avoid first and last values and even positions
+            if ($i == 0 || $i == count($documentSymbol) || $i % 2 == 0) {
+                $i++;
+                continue;
+            } else {
+                $i++;
+                $variables['document'][] = strip_tags($documentSymbolValue);
+            }
+        }
+
+        foreach (self::$_header as $key => $header) {
+            $documentSymbol = explode(self::$_templateSymbol, $header);
+            $i = 0;
+            foreach ($documentSymbol as $documentSymbolValue) {
+                // avoid first and last values and even positions
+                if ($i == 0 || $i == count($documentSymbol) || $i % 2 == 0) {
+                    $i++;
+                    continue;
+                } else {
+                    $variables['header'][] = strip_tags($documentSymbolValue);
+                    $i++;
+                }
+            }
+        }
+
+        foreach (self::$_footer as $key => $footer) {
+            $documentSymbol = explode(self::$_templateSymbol, $footer);
+            $i = 0;
+            foreach ($documentSymbol as $documentSymbolValue) {
+                // avoid first and last values and even positions
+                if ($i == 0 || $i == count($documentSymbol) || $i % 2 == 0) {
+                    $i++;
+                    continue;
+                } else {
+                    $variables['footer'][] = strip_tags($documentSymbolValue);
+                    $i++;
+                }
+            }
+        }
+
+        return $variables;
+    }
+
+    /**
+     * Return template variables. Only for legaldocx.
+     *
+     * @access public
+     * @return array
+     */
+    public function returnVariables()
+    {
+        $vars['document'] = explode(self::$_templateSymbol, $this->_preprocessDocument());
+        $aElementTypes = '(BLOCK|CHECKBOX|COMMENT|DATE|GROUP|HEADING|LIST|NUMBERING|ROW|SELECT|TAB|TEXT|TEXTAREA)';
+        foreach($vars['document'] as $key => $value){
+            if(!preg_match('/'.$aElementTypes.'_/', strip_tags($value))) unset($vars['document'][$key]);
+        }
+        $vars['document'] = array_values($vars['document']);
+
+        foreach (self::$_footer as $footer) {
+            $vars['footer'] = explode(self::$_templateSymbol, $footer);
+        }
+        if(!empty($vars['footer'])){
+            foreach($vars['footer'] as $key => $value){
+                if(!preg_match('/'.$aElementTypes.'_/', strip_tags($value))) unset($vars['footer'][$key]);
+            }
+            $vars['footer'] = array_values($vars['footer']);
+        }
+
+        foreach (self::$_header as $header) {
+            $variables['header'] = explode(self::$_templateSymbol, $header);
+        }
+        if(!empty($vars['header'])){
+            foreach($vars['header'] as $key => $value){
+                if(!preg_match('/'.$aElementTypes.'_/', strip_tags($value))) unset($vars['header'][$key]);
+            }
+            $vars['header'] = array_values($vars['header']);
+        }
+
+        $this->_buildArray($vars);
+
+        return $vars;
+    }
+
+    /**
+     * Build array with given variables
+     *
+     * @param array $variables
+     */
+    private function _buildArray($variables)
+    {
+        $i = 0;
+        $j = 0;
+        foreach ($variables as $key => $section) {
+            foreach ($section as $value) {
+                  $variableParts = $this->cleanExplode("_", $value);
+                  switch ($variableParts[0]) {
+                    case 'BLOCK':
+                    case 'GROUP':
+                    case 'TAB':
+                        self::$templateVariables[$key][$j]['TAG'] = $variableParts[0];
+                        $variableGroup = $this->cleanExplode(self::$_templateGroupSymbol, $variableParts[1]);
+                        self::$templateVariables[$key][$j]['NAME'] = $variableGroup[0];
+                        if (!empty ($variableGroup[1])) {
+                            self::$templateVariables[$key][$j]['GROUPID'] = $variableGroup[1];
+                        }
+                        if (!empty ($variableGroup[2])) {
+                            //The group is nested inside other group
+                            self::$templateVariables[$key][$j]['GROUP'] = $variableGroup[2];
+                        }
+                        break;
+
+                    case 'HEADING':
+                        self::$templateVariables[$key][$j]['TAG'] = $variableParts[0];
+                        $variableGroup = $this->cleanExplode(self::$_templateGroupSymbol, $variableParts[1]);
+                        self::$templateVariables[$key][$j]['NAME'] =
+                        $variableGroup[0];
+                        break;
+
+                    case 'COMMENT':
+                        self::$templateVariables[$key][$j]['TAG'] = $variableParts[0];
+                        $variableGroup = $this->cleanExplode(self::$_templateGroupSymbol, $variableParts[1]);
+                        self::$templateVariables[$key][$j]['NAME'] = $variableGroup[0];
+                        if (!empty ($variableGroup[1])) {
+                            self::$templateVariables[$key][$j]['GROUP'] = $variableGroup[1];
+                        } elseif (!empty ($variableParts[2])) {
+                            self::$templateVariables[$key][$j]['GROUP'] = $variableParts[2];
+                        }
+                        break;
+
+                    case 'NUMBERING':
+                        self::$templateVariables[$key][$j]['TAG'] = $variableParts[0];
+                        $variableGroup = $this->cleanExplode(self::$_templateGroupSymbol, $variableParts[1]);
+                        self::$templateVariables[$key][$j]['NAME'] = $variableGroup[0];
+                        if (!empty ($variableGroup[1])) {
+                            self::$templateVariables[$key][$j]['GROUP'] = $variableGroup[1];
+                        } elseif (!empty ($variableParts[2])) {
+                            self::$templateVariables[$key][$j]['GROUP'] = $variableParts[2];
+                        }
+                        break;
+
+                    case 'LIST':
+                    case 'ROW':
+                        self::$templateVariables[$key][$j]['TAG'] = $variableParts[0];
+                        $variableGroup = $this->cleanExplode(self::$_templateGroupSymbol, $variableParts[3]);
+                        self::$templateVariables[$key][$j]['NAME'] = $variableParts[2].'_'.$variableParts[3];
+                        if (!empty ($variableParts[1])) {
+                            self::$templateVariables[$key][$j]['GROUPID'] = $variableParts[1];
+                        }
+                        if (!empty ($variableGroup[1])) {
+                            //The group is nested inside other group
+                            self::$templateVariables[$key][$j]['GROUP'] = $variableGroup[1];
+                        }
+                        break;
+
+                      case 'CHECKBOX':
+                      case 'TEXT':
+                      case 'TEXTAREA':
+                      case 'SELECT':
+                      case 'DATE':
+                          self::$templateVariables[$key][$j]['TAG'] = $variableParts[0];
+                          $variableGroup = $this->cleanExplode(self::$_templateGroupSymbol, $variableParts[1]);
+                          self::$templateVariables[$key][$j]['NAME'] =
+                              $variableGroup[0];
+                          if (!empty ($variableGroup[1])) {
+                              self::$templateVariables[$key][$j]['GROUP'] =
+                                  $variableGroup[1];
+                          }
+                          break;
+
+                      default:
+                          break;
+                  }
+                  $j++;
+                    $i++;
+            }
+        }
+    }
+
+    /**
+     * clean the sections from the unused footers and headers
+     *
+     * @access private
+     */
+    private function cleanDocument($document){
+        $domDocument = new DomDocument();
+        $domDocument->loadXML($document);
+        //check if there are footers
+        $xmlWP = $domDocument->getElementsByTagNameNS(
+                        'http://schemas.openxmlformats.org/wordprocessingml/2006/main','headerReference');
+        $length = $xmlWP->length;
+        $itemsWP = array();
+        for ($i = 0; $i < $length; $i++) {
+            $itemsWP[] = $xmlWP->item($i);
+        }
+        foreach($itemsWP as $aux){
+            if ($aux->attributes->getNamedItem("type")->nodeValue != 'default') {
+                        $padre = $aux->parentNode;
+                        $padre->removeChild($aux);
+            }
+        }
+        $xmlWP = $domDocument->getElementsByTagNameNS(
+                        'http://schemas.openxmlformats.org/wordprocessingml/2006/main','footerReference');
+        $length = $xmlWP->length;
+        $itemsWP = array();
+        for ($i = 0; $i < $length; $i++) {
+            $itemsWP[] = $xmlWP->item($i);
+        }
+        foreach($itemsWP as $aux){
+            if ($aux->attributes->getNamedItem("type")->nodeValue != 'default') {
+                        $padre = $aux->parentNode;
+                        $padre->removeChild($aux);
+            }
+        }
+        return $domDocument->saveXML();
+    }
+
+    /**
+     * Returns an array with clean exploded variables
+     *
+     * @param string $delimiter
+     * @param string $string
+     * @return array
+     */
+    public function cleanExplode($delimiter, $string)
+    {
+        $array = explode($delimiter, $string);
+        foreach ($array as $key => $part) {
+            $array[$key] = trim(strip_tags($part));
+        }
+        return $array;
+    }
+
+    /**
+     * Returns the xml with bookmarks formatted $NAME$
+     *
+     * @return string
+     */
+    private function _preprocessDocument()
+    {
+        $xml = $this->getDocument();
+        $xml = preg_replace('/<w:bookmarkStart w:id="[0-9]" w:name="([0-9 A-Z _]*)"/',
+                            self::$_templateSymbol . '${1}' . self::$_templateSymbol, $xml);
+        return $xml;
+    }
+
+    /**
+     * Get current rid
+     *
+     * @access private
+     */
+    private function getCurrentRID()
+    {
+        $rId = 0;
+        $domRelsDocumentXMLRels = new DomDocument();
+        $domRelsDocumentXMLRels->loadXML(self::$_relsDocumentXMLRels);
+
+        $xmlRelationship = $domRelsDocumentXMLRels->getElementsByTagName(
+            'Relationship'
+        );
+
+        for ($i = 0; $i < $xmlRelationship->length; $i++) {
+            if (
+                (int)substr(
+                    $xmlRelationship->item($i)->getAttribute('Id'), 3
+                ) > $rId
+            ) {
+                $rId = (int)substr(
+                    $xmlRelationship->item($i)->getAttribute('Id'), 3
+                );
+            }
+        }
+
+        CreateDocx::$intIdWord = $rId + 1;
+        self::$ridInitTemplateCharts = $rId + 1;
+    }
+
+}

@@ -785,6 +785,15 @@ class StyleParser {
    * @return mixed
    */
   function __get($prop) {
+    return $this->nonmagic_get($prop);
+  }
+
+  /** The magic of __get leaks memory. Calling a normal function avoids the leak.
+   *
+   * @param string $prop
+   * @return mixed
+   */
+  function nonmagic_get($prop) {
 
     if ( !isset(self::$_defaults[$prop]) ){
       //throw new Exception("'$prop' is not a valid CSS2 property.");
@@ -1273,13 +1282,12 @@ class StyleParser {
 
     $col = $this->munge_colour($colour);
 
-    if ( is_null($col) ) {
+    if ( is_null($col) )
       $col = self::$_defaults["color"];
-    }
 
     //see __set and __get, on all assignments clear cache, not needed on direct set through __set
     $this->_prop_cache["color"] = null;
-    if (is_array($col)) {
+    if (isset($col["hex"])) {
         $this->_props["color"] = $col["hex"];
     } else {
         $this->_props["color"] = $col;
