@@ -10,6 +10,6 @@
 		}
 	],
 	"autoload": {
-		"psr-0": {"Phpdocx\\" : "Classes/Phpdocx/"}
+		"psr-0": {"Phpdocx\\" : "Classes/"}
 	}
 }
