@@ -7,6 +7,6 @@ We do not recommend to modify an existing default template:
 	- phpdocxBaseTemplate.docx
 	- phpdocxBaseTemplateNumberedHeadings.docx
 
-Because the standard microsoft Word interface may change its structure behind the curtains and break a property taht may be used by PHPDocX.
+Because the standard microsoft Word interface may change its structure behind the curtains and break a property that may be used by PHPDocX.
 
 Nevertheless if you still choose to do so, please, first of all do a backup of the file to make sure you may return to the original version.

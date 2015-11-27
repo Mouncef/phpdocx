@@ -33,5 +33,5 @@ $text[]= array('text' => ' and some other text.');
 $docx->addText($text);
 $docx->addText('Some other text.');
 
-$docx->createDocx('example_Footnote_2');
+$docx->createDocx('example_addFootnote_2');
 

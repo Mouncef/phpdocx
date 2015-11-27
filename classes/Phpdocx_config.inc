@@ -14,6 +14,14 @@
 // set default locale for numeric formats
 setlocale(LC_NUMERIC, 'C');
 
+// set error level
+error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED);
+
+/**
+ * Allow to disable loading external entities
+ */
+libxml_disable_entity_loader(false);
+
 /**
  * The default base template folder
  */

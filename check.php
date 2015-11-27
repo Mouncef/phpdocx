@@ -185,34 +185,6 @@ if ($isWeb) {
 }
 
 
-// XSL support
-if ($isWeb) {
-	$output .= '<li class="odd">';
-}
-if (!class_exists('XSLTProcessor')) {
-	if ($isWeb) {
-		$output .= '<span class="testko">';
-	}
-	$output .= 'Error ';
-	if ($isWeb) {
-		$output .= '</span>';
-	}
-	$output .= 'You must install XSL support for PHP' . $break;
-} else {
-	if ($isWeb) {
-		$output .= '<span class="testok">';
-	}
-	$output .= 'OK ';
-	if ($isWeb) {
-		$output .= '</span>';
-	}
-	$output .= 'XSL support is enabled.' . $break;
-}
-if ($isWeb) {
-	$output .= '</li>';
-}
-
-
 // DOM support
 if ($isWeb) {
 	$output .= '<li class="even">';
@@ -295,49 +267,6 @@ if ($isWeb) {
 	$output .= '</li>';
 }
 
-// TransformDocAdv file exists
-if ($isWeb) {
-	$output .= '<li class="even">';
-}
-if (file_exists('classes/TransformDocAdv.inc')) {
-	$fp = @fsockopen('localhost', 8100, $errno, $errstr, 30);
-	if (!$fp) {
-		if ($isWeb) {
-			$output .= '<span class="testwarn">';
-		}
-		$output .= 'Warning ';
-		if ($isWeb) {
-			$output .= '</span>';
-		}
-   		$output .= 'You\'re not running OpenOffice in headless mode on port 8100.' . $break;
-	} else {
-		if ($isWeb) {
-			$output .= '<span class="testok">';
-		}
-		$output .= 'OK ';
-		if ($isWeb) {
-			$output .= '</span>';
-		}
-		$output .= 'OpenOffice is running in headless mode on port 8100.' . $break;
-	}
-	if (strtoupper(substr(PHP_OS, 0, 3)) == 'WIN') {
-		if (file_exists('classes/TransformDocAdv.inc')) {
-			if ($isWeb) {
-				$output .= '<span class="comment">You can download OpenOffice from http://www.openoffice.org/download</span>' . $break;
-			}
-		}
-	} elseif (strtoupper(substr(PHP_OS, 0, 3)) == 'LIN') {
-		if (file_exists('classes/TransformDocAdv.inc')) {
-			if ($isWeb) {
-				$output .= '<span class="comment">PHPDocX includes OpenOffice but you can download a custom version from http://www.openoffice.org/download</span>' . $break;
-			}
-		}
-	}
-}
-if ($isWeb) {
-	$output .= '</li>';
-}
-
 // Info output
 if ($isWeb) {
 	$output .= '<li class="even">';
@@ -366,7 +295,6 @@ $output .= 'SERVER_PROTOCOL: ' . $_SERVER['SERVER_PROTOCOL'] . "\n";
 $output .= 'HTTP_HOST: ' . $_SERVER['HTTP_HOST'] . "\n";
 $output .= 'HTTP_X_FORWARDED_FOR: ' . $_SERVER['HTTP_X_FORWARDED_FOR'] . "\n";
 $output .= 'PHP_SELF: ' . $_SERVER['PHP_SELF'] . "\n";
-$output .= 'XSLTProcessor: ' . class_exists('XSLTProcessor') . "\n";
 $output .= 'ZipArchive: ' . class_exists('ZipArchive') . "\n";
 $output .= 'DomDocument: ' . class_exists('DomDocument') . "\n";
 $output .= 'SimpleXMLElement: ' . class_exists('SimpleXMLElement') . "\n";

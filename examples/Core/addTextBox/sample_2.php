@@ -14,11 +14,13 @@ $text= 'Some text content for the textbox. Lorem ipsum dolor sit amet, consectet
     'in voluptate velit esse cillum dolore eu fugiat nulla pariatur.';
 
 $textBoxOptions = array(
-	'align' => 'left', 
-	'paddingLeft' => 5, 
-	'border' => false, 
-	'fillColor' => '#ddddff', 
-	'width' => 200
+	'align' => 'right',
+	'paddingLeft' => 5,
+	'border' => false,
+	'fillColor' => '#ddddff',
+	'width' => 200,
+    'margin_top' => 10,
+    'margin_left' => 10,
 	);
 
 $txtbx->addTextBox($text, $textBoxOptions);

@@ -3,7 +3,7 @@
 //path to  the CreateDocx class within your PHPDocX installation
 require_once '../../../classes/CreateDocx.inc';
 
-$docx = new CreateDocxFromTemplate('../../files/TemplateWordFragment_1.docx');
+$docx = new CreateDocxFromTemplate('../../files/TemplateWordFragment_3.docx');
 
 //create the Word fragment that is going to replace the variable
 $wf = new WordFragment($docx, 'document');
@@ -14,14 +14,7 @@ $image->addImage(array('src' => '../../img/image.png' , 'scaling' => 50, 'float'
 //and also a link fragment
 $link = new WordFragment($docx, 'document');
 $link->addLink('link to Google', array('url'=> 'http://www.google.es', 'color' => '0000FF', 'u' => 'single'));
-//and a footnote fragment
-$footnote = new WordFragment($docx, 'document');
-$footnote->addFootnote(
-	array(
-		'textDocument' => 'here it is',
-		'textFootnote' => 'This is the footnote text.',
-	)
-);
+
 //combine them to create a paragraph
 $text = array();
 
@@ -38,18 +31,13 @@ array(
 );
 $text[] =
 array(
-'text' => ' As you may see is extremely simple to do so and can be done with any other Word element. For example to include  a footnote is also as simple as this: ',
-);
-$text[] = $footnote;
-$text[] =
-array(
-'text' => ' , as you see there is a footnote at the bootom of the page. ',
-'color' => 'B70000'
+'text' => ' As you may see is extremely simple to do so and can be done with any other Word element.',
 );
 //insert all the content in the Word fragment we are going to use for replacement
 $wf->addText($text);
 
-$docx->replaceVariableByWordFragment(array('WORDFRAGMENT' => $wf), array('type' => 'block'));
+$docx->replaceVariableByWordFragment(array('WORDFRAGMENT_HEADER' => $wf), array('type' => 'block', 'target' => 'header'));
+$docx->replaceVariableByWordFragment(array('WORDFRAGMENT_FOOTER' => $wf), array('type' => 'block', 'target' => 'footer'));
+$docx->replaceVariableByWordFragment(array('WORDFRAGMENT_BODY' => $wf), array('type' => 'block'));
 
-
-$docx->createDocx('example_replaceVariableByWordFragment_1');
+$docx->createDocx('example_replaceVariableByWordFragment_3');

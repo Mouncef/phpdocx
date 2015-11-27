@@ -34,14 +34,14 @@ $mathML = '<math xmlns="http://www.w3.org/1998/Math/MathML">
 	</mrow>
 </math>';
 
-$docx->addMathEquation($mathML, 'mathmml');
+$docx->addMathEquation($mathML, 'mathml');
 
 $text = array();
 $text[] = array('text' => 'The same equation inline: ');
 $math = new WordFragment($docx);
-$math->addMathEquation($mathML, 'mathmml');
+$math->addMathEquation($mathML, 'mathml');
 $text[] = $math;
 
 $docx->addText($text);
 
-$docx->createDocx('example_addMathMML_1');
+$docx->createDocx('example_addMathML_1');

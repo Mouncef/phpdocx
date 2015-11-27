@@ -40,7 +40,7 @@ $options = array(
     'spacingLeft' => 20,
     'spacingRight' => 0,
     'textWrap' => 1,
-    'float' => right,
+    'float' => 'right',
 );
 $image->addImage($options);
 

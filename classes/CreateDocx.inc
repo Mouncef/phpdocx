@@ -8,7 +8,7 @@
  * @copyright  Copyright (c) Narcea Producciones Multimedia S.L.
  *             (http://www.2mdc.com)
  * @license    http://www.phpdocx.com/wp-content/themes/lightword/pro_license.php
- * @version    2014.04.21
+ * @version    2014.08.01
  * @link       http://www.phpdocx.com
  */
 error_reporting(E_ALL & ~E_STRICT & ~E_NOTICE);
@@ -338,6 +338,20 @@ class CreateDocx extends CreateDocument
      * @access protected
      * @var array
      */
+    protected $_modifiedHeadersFooters;
+
+    /**
+     *
+     * @access protected
+     * @var array
+     */
+    protected $_modifiedRels;
+
+    /**
+     *
+     * @access protected
+     * @var array
+     */
     protected $_parsedStyles;
 
     /**
@@ -644,6 +658,7 @@ class CreateDocx extends CreateDocument
         $this->_defaultFont = '';
         $this->_macro = 0;
         $this->_modifiedDocxProperties = false;
+        $this->_modifiedHeadersFooters= array();
         $this->_relsHeader = array();
         $this->_relsFooter = array();
         $this->_parsedStyles = array();
@@ -1003,7 +1018,6 @@ class CreateDocx extends CreateDocument
      * Adds a background image to the document
      *
      * @access public
-     * @example ../examples/easy/BackgroundImage.php
      * @param string $src
      */
     public function addBackgroundImage($src)
@@ -1038,7 +1052,6 @@ class CreateDocx extends CreateDocument
      * Adds a bookmart start or end tag
      *
      * @access public
-     * @example ../examples/easy/Bookmarks.php
      * @param array $options
      * Values:
      * 'type' (start, end)
@@ -1078,11 +1091,6 @@ class CreateDocx extends CreateDocument
      * Add a break
      *
      * @access public
-     * @example ../examples/easy/PageBreak.php
-     * @example ../examples/intermediate/Chart_footnote.php
-     * @example ../examples/intermediate/FooterPager.php
-     * @example ../examples/intermediate/Multidocument.php
-     * @example ../examples/advanced/Report.php
      * @param array $options
      *  Values:
      * 'type' (line, page, column)
@@ -1112,25 +1120,6 @@ class CreateDocx extends CreateDocument
      * Add a chart
      *
      * @access public
-     * @example ../examples/easy/Chart.php
-     * @example ../examples/easy/Chart_area3D.php
-     * @example ../examples/easy/Chart_bar.php
-     * @example ../examples/easy/Chart_barStacked.php
-     * @example ../examples/easy/Chart_bubble.php
-     * @example ../examples/easy/Chart_col.php
-     * @example ../examples/easy/Chart_doughnut.php
-     * @example ../examples/easy/Chart_line.php
-     * @example ../examples/easy/Chart_ofPieChart_bar.php
-     * @example ../examples/easy/Chart_ofPieChart_pie.php
-     * @example ../examples/easy/Chart_percentstaked.php
-     * @example ../examples/easy/Chart_radar.php
-     * @example ../examples/easy/Chart_scatter.php
-     * @example ../examples/easy/Chart_surface.php
-     * @example ../examples/intermediate/Chart.php
-     * @example ../examples/intermediate/Chart_cylinder.php
-     * @example ../examples/intermediate/Chart_footnote.php
-     * @example ../examples/intermediate/Multidocument.php
-     * @example ../examples/advanced/Report.php
      * @param array $options
      *  Values: 'color' (1, 2, 3...) color scheme,
      *  'perspective' (20, 30...),
@@ -1250,7 +1239,6 @@ class CreateDocx extends CreateDocument
      * Adds a comment
      *
      * @access public
-     * @example ../examples/easy/Comment.php
      * @param array $options
      *  Values:
      * 'textDocument'(mixed) a string of text to appear in the document body as anchor for the comment or an array with the text and associated text options
@@ -1358,7 +1346,6 @@ class CreateDocx extends CreateDocument
      * Adds date and hour to the Word document
      *
      * @access public
-     * @example ../examples/easy/DateAndHour.php
      * @param array $options Style options to apply to the date
      *  Values:
      * 'bidi' (boolean) set to true for right to left languages
@@ -1429,8 +1416,6 @@ class CreateDocx extends CreateDocument
      * Adds an endnote
      *
      * @access public
-     * @example ../examples/easy/Endnote.php
-     * @example ../examples/intermediate/EndnoteAndFootnote.php
      * @param array $options.
      * Values:
      * 'textDocument'(mixed) a string of text to appear in the document body or an array with the text and associated text options
@@ -1597,9 +1582,6 @@ class CreateDocx extends CreateDocument
      * Add a footer
      *
      * @access public
-     * @example ../examples/easy/Footer.php
-     * @example ../examples/intermediate/HeaderAndFooter.php
-     * @example ../examples/advanced/Report.php
      * @param array $footer
      * @param array
      *  Values:
@@ -1698,9 +1680,6 @@ class CreateDocx extends CreateDocument
      * Adds a footnote
      *
      * @access public
-     * @example ../examples/easy/Footnote.php
-     * @example ../examples/intermediate/Chart_footnote.php
-     * @example ../examples/intermediate/EndnoteAndFootnote.php
      * @param array $options
      *  Values:
      * 'textDocument'(mixed) a string of text to appear in the document body or an array with the text and associated text options
@@ -1835,7 +1814,6 @@ class CreateDocx extends CreateDocument
      * Add a Form element (text field, select or checkbox)
      *
      * @access public
-     * @example ../examples/easy/FormElements.php
      * @param mixed $type it can be 'textfield', 'checkbox' or 'select'
      * @param array $options Style options to apply to the text
      *  Values:
@@ -1887,9 +1865,6 @@ class CreateDocx extends CreateDocument
      * Add a header
      *
      * @access public
-     * @example ../examples/easy/Header.php
-     * @example ../examples/intermediate/HeaderAndFooter.php
-     * @example ../examples/advanced/Report.php
      * @param array $headers
      *  Values:
      * 'default'(object) WordFragment
@@ -1987,7 +1962,6 @@ class CreateDocx extends CreateDocument
      * Adds a heading to the Word document
      *
      * @access public
-     * @example ../examples/easy/Heading.php
      * @param string $text the heading text
      * @param int $level can be 1 (default), 2,3, ...
      * @param array $options Style options to apply to the heading
@@ -2052,8 +2026,6 @@ class CreateDocx extends CreateDocument
      * Add an image
      *
      * @access public
-     * @example ../examples/easy/Image.php
-     * @example ../examples/intermediate/Chart_footnote.php
      * @param array $data
      * Values:
      * 'borderColor' (string)
@@ -2158,7 +2130,6 @@ class CreateDocx extends CreateDocument
      * Adds line numbering
      *
      * @access public
-     * @example ../examples/easy/LineNumbering.php
      * @param array $options
      * countBy (int) line number increments to display (default value is 1)
      * start (int) initial line number (default value is 1)
@@ -2209,8 +2180,6 @@ class CreateDocx extends CreateDocument
      * Add a link
      *
      * @access public
-     * @example ../examples/easy/Link.php
-     * @example ../examples/advanced/Report.php
      * @param array $options
      * @see addText
      * additional parameter:
@@ -2273,10 +2242,6 @@ class CreateDocx extends CreateDocument
      * Add a list
      *
      * @access public
-     * @example ../examples/easy/List.php
-     * @example ../examples/intermediate/List.php
-     * @example ../examples/intermediate/List_nested.php
-     * @example ../examples/intermediate/Multidocument.php
      * @param array $data Values of the list
      * @param string $styleType (mixed), 0 (clear), 1 (inordinate), 2(numerical) or the name of the created list
      * @param array $options formatting parameters for the text of all list items
@@ -2351,9 +2316,8 @@ class CreateDocx extends CreateDocument
      * Add an existing math equation to DOCX
      *
      * @access public
-     * @example ../examples/easy/Math.php
      * @param string $equation DOCX file with an equation, OMML equation string or MML
-     * @param string $type Type of equation: docx, omml, mathmml
+     * @param string $type Type of equation: docx, omml, mathml
      */
     public function addMathEquation($equation, $type)
     {
@@ -2377,12 +2341,12 @@ class CreateDocx extends CreateDocument
                 $this->_wordDocumentC .= '<' . CreateDocx::NAMESPACEWORD . ':p>' .
                         (string) $equation . '</' . CreateDocx::NAMESPACEWORD . ':p>';
             }
-        } elseif ($type == 'mathmml') {
+        } elseif ($type == 'mathml') {
             $class = get_class($this);
             $math = CreateMath::getInstance();
-            PhpdocxLogger::logger('Convert MathMML eq.', 'debug');
+            PhpdocxLogger::logger('Convert MathML eq.', 'debug');
             $math->createMath($equation);
-            PhpdocxLogger::logger('Add converted MathMML eq to word document.', 'info');
+            PhpdocxLogger::logger('Add converted MathML eq to word document.', 'info');
             if ($class == 'WordFragment') {
                 $this->wordML .= $transformedEquation;
             } else {
@@ -2397,7 +2361,6 @@ class CreateDocx extends CreateDocument
      * Adds a merge field to the Word document
      *
      * @access public
-     * @example ../examples/easy/MergeField.php
      * @param string $name
      * @param array $mergeParameters
      * Keys and values:
@@ -2477,7 +2440,6 @@ class CreateDocx extends CreateDocument
      * Adds page borders
      *
      * @access public
-     * @example ../examples/easy/PageBorders.php
      * @param array $options (<side> stands for top, right, bootom or left)
      * 'zOrder' (int)
      * 'display' (string) posible values are:allPages (display page border on all pages, default value),
@@ -2516,8 +2478,6 @@ class CreateDocx extends CreateDocument
      * need to press F9 in the MS Word interface to update its value to the current page
      *
      * @access public
-     * @example ../examples/easy/PageNumber.php
-     * @example ../examples/intermediate/FooterPager.php
      * @param mixed $type (String): numerical, alphabetical.
      * @param array $options Style options to apply to the numbering
      *  Values:
@@ -2571,7 +2531,6 @@ class CreateDocx extends CreateDocument
      * Add properties to document
      *
      * @access public
-     * @example ../examples/easy/Properties.php
      * @param array $values Parameters to use
      *  Values: 'title', 'subject', 'creator', 'keywords', 'description',
      *  'category', 'contentStatus', 'Manager','Company', 'custom' ('name' => array('type' => 'value'))
@@ -2599,7 +2558,7 @@ class CreateDocx extends CreateDocument
         if (!empty($values['title']) || !empty($values['subject']) || !empty($values['creator']) || !empty($values['keywords']) || !empty($values['description']) || !empty($values['category']) || !empty($values['contentStatus'])) {
             self::$propsCore = $prop->createProperties($values, self::$propsCore);
         }
-        if ($values['contentStatus'] == 'Final') {
+        if (isset($values['contentStatus']) && $values['contentStatus'] == 'Final') {
             self::$propsCustom = $prop->createPropertiesCustom(array('_MarkAsFinal' => array('boolean' => 'true')), self::$propsCustom);
         }
         if (!empty($values['Manager']) || !empty($values['Company'])) {
@@ -2623,7 +2582,6 @@ class CreateDocx extends CreateDocument
      * Adds a section
      *
      * @access public
-     * @example ../examples/easy/Section.php
      * @param string sectionType (string): nextPage, nextColumn, continuous, evenPage, oddPage
      * @param array paperType (string): A4, A3, letter, legal, A4-landscape, A3-landscape, letter-landscape, legal-landscape, custom
      * @param array options
@@ -2664,7 +2622,6 @@ class CreateDocx extends CreateDocument
      * Add a shape
      *
      * @access public
-     * @example ../examples/intermediate/Shapes.php
      * @param string $type Type of shape to draw
      *  Values:arc, curve, line, polyline, rect, roundrect, shape, oval
      * @param array $options
@@ -2712,7 +2669,6 @@ class CreateDocx extends CreateDocument
      * need to press F9 in the MS Word interface to update its value to the current page
      *
      * @access public
-     * @example ../examples/easy/SimpleField.php
      * @param $fieldName the field value. Available fields are:
      * AUTHOR, COMMENTS, DOCPROPERTY, FILENAME, FILESIZE, KEYWORDS,
      * LASTSAVEDBY, NUMCHARS, NUMPAGES, NUMWORDS, SUBJECT, TEMPLATE, TITLE
@@ -2781,7 +2737,6 @@ class CreateDocx extends CreateDocument
      * Add a Structured Document Tag
      *
      * @access public
-     * @example ../examples/easy/StructuredDocumentTag.php
      * @param mixed $type it can be 'comboBox', 'date', 'dropDownList' or 'richText'
      * @param array $options Style options to apply to the text
      *  Values:
@@ -2834,10 +2789,6 @@ class CreateDocx extends CreateDocument
      * Add a table.
      *
      * @access public
-     * @example ../examples/easy/Table.php
-     * @example ../examples/intermediate/Table.php
-     * @example ../examples/intermediate/TableStyled.php
-     * @example ../examples/advanced/Report.php
      * @param array $tableData an array of arrays with the table data organized by rows
      * Each cell content may be a string, WordFragment or array.
      * If the cell contents are in the form of an array its keys and posible values are:
@@ -2927,7 +2878,6 @@ class CreateDocx extends CreateDocument
      * Add a table of contents (TOC)
      *
      * @access public
-     * @example ../examples/easy/TableContents.php
      * @param array $options
      *  Values:
      * 'autoUpdate' (boolean) if true it will try to update the TOC when first opened
@@ -2940,7 +2890,7 @@ class CreateDocx extends CreateDocument
      * 'bold' (bool)
      * 'color' (ffffff, ff0000...)
      * 'font' (Arial, Times New Roman...)
-     * 'fontSi`ze (int)
+     * 'fontSize (int)
      * 'indentLeft' (int) distange in twentieths of a point (twips)
      * 'indentRight' (int) distange in twentieths of a point (twips)
      * 'italic' (bool)
@@ -2979,14 +2929,6 @@ class CreateDocx extends CreateDocument
      * Adds a text paragraph
      *
      * @access public
-     * @example ../examples/easy/Text.php
-     * @example ../examples/easy/Text_columns.php
-     * @example ../examples/easy/Text_cursive.php
-     * @example ../examples/easy/Text_linespacing.php
-     * @example ../examples/intermediate/FooterPager.php
-     * @example ../examples/intermediate/Multidocument.php
-     * @example ../examples/intermediate/Text.php
-     * @example ../examples/advanced/Report.php
      * @param mixed $textParams if a string just the text to be included, if an
      * array is or an array of arrays with each element containing
      * the text to be inserted and their formatting properties or a an instance of WordFragment
@@ -3071,8 +3013,6 @@ class CreateDocx extends CreateDocument
      * Add a textbox
      *
      * @access public
-     * @example ../examples/easy/TextBox.php
-     * @example ../examples/intermediate/TextBox.php
      * @param mixed $content it may be a Word fragment, a plain text string or an array with same parameters used in the addText method
      * The first array entry is the text to be included in the text box, the second one
      * is itself another array with all the standard text formatting options
@@ -3190,8 +3130,6 @@ class CreateDocx extends CreateDocument
      * Generates the new DOCX file
      *
      * @access public
-     * @example ../examples/easy/Text.php
-     * @example ../examples/advanced/Report.php
      * @param string $fileName path to the resulting docx
      */
     public function createDocx($fileName = 'document')
@@ -3345,11 +3283,12 @@ class CreateDocx extends CreateDocument
      * Generate and download a new DOCX file
      *
      * @access public
-     * @param string $args[0] Name of file
+     * @param string $args[0] File name
      * @param string $args[1] Page style
      *  Values: 'bottom' (4000, 4001...), 'left' (4000, 4001...),
      *  'orient' (landscape), 'right' (4000, 4001), 'titlePage' (1),
      *  'top' (4000, 4001)
+     * @param string $args[0] Download file name
      */
     public function createDocxAndDownload()
     {
@@ -3392,7 +3331,6 @@ class CreateDocx extends CreateDocument
      * Create a new style to use in your Word document.
      *
      * @access public
-     * @example ../examples/easy/CreateListStyle.php
      * @param string $name the name we want to give to the created list
      * @param array $listOptions an array with the different styling options for each level:
      *  'type' can be decimal, lowerLetter, bullet, ....
@@ -3416,7 +3354,6 @@ class CreateDocx extends CreateDocument
      * Create a new paragraph style and linked char style to be used in your Word document.
      *
      * @access public
-     * @example ../examples/easy/CreateParagraphStyle.php
      * @param string $name the name we want to give to the created style
      * @param mixed $styleOptions it includes the required style options
      * Array values:
@@ -3475,7 +3412,6 @@ class CreateDocx extends CreateDocument
      * Stablish the general docx settings in settings.xml
      *
      * @access public
-     * @example ../examples/easy/Settings.php
      * @param array settings
      * Keys and values:
      * 'view' (string): none(default), print, outline, masterPages, normal (draft view), web
@@ -3586,7 +3522,6 @@ class CreateDocx extends CreateDocument
      *
      * Transform a word document to a text file
      *
-     * @example ../examples/easy/Docx2Text.php
      * @param string $path. Path to the docx from which we wish to import the content
      * @param string $path. Path to the text file output
      * @param array styles.
@@ -3604,9 +3539,6 @@ class CreateDocx extends CreateDocument
      * It preserves many CSS styles
      *
      * @access public
-     * @example ../examples/easy/EmbedSimpleHTML.php
-     * @example ../examples/intermediate/EmbedExternalHTML.php
-     * @example ../examples/intermediate/EmbedHTMLinTable.php
      * @param string $html HTML to add. Must be a valid XHTML
      * @param array $options:
      * isFile (boolean),
@@ -3726,7 +3658,6 @@ class CreateDocx extends CreateDocument
     /**
      * Inserts new headers and/or footers from a word file.
      *
-     * @example ../examples/easy/ImportHeaderAndFooter.php
      * @param string $path. Path to the docx from which we wish to import the header and/or footer
      * @param string $type. Declares if we want to import only the header, only the footer or both.
      * Values: header, footer, headerAndFooter (default value)
@@ -3987,7 +3918,6 @@ class CreateDocx extends CreateDocument
      * Imports an existing list style  from an existing docx document.
      *
      * @access public
-     * @example ../examples/easy/ImportListStyle.php
      * @param string $path. Must be a valid path to an existing .docx, .dotx o .docm document
      * @param int $id. The id of the style you want to import. You may obtain the id with the help of the parseStyle method
      */
@@ -4061,7 +3991,6 @@ class CreateDocx extends CreateDocument
      * Imports an existing style sheet from an existing docx document.
      *
      * @access public
-     * @example ../examples/easy/ImportWordStyles.php
      * @param string $path. Must be a valid path to an existing .docx, .dotx o .docm document
      * @param string $type. You may choose 'replace' (overwrites the current styles) or 'merge' (adds the selected styles)
      * @param array $myStyles. A list of specific styles to be merged. If it is empty or the choosen type is 'replace' it will be ignored.
@@ -4222,7 +4151,6 @@ class CreateDocx extends CreateDocument
      * Inserts a Word fragment after a certain node.
      *
      * @access public
-     * @example ../examples/easy/InsertWordFragmentAfter.php
      * @param mixed $wordFragment the WordML fragment that we wish to insert. 
      * it can be an instance of the WordFragment class or the result of a DOCXPath expression
      * @param array $referenceNode
@@ -4277,7 +4205,6 @@ class CreateDocx extends CreateDocument
      * Inserts a Word fragment before a certain node.
      *
      * @access public
-     * @example ../examples/easy/InsertWordFragmentBefore.php
      * @param mixed $wordFragment the WordML fragment that we wish to insert. 
      * it can be an instance of the WordFragment class or the result of a DOCXPath expression
      * @param array $referenceNode
@@ -4328,7 +4255,6 @@ class CreateDocx extends CreateDocument
      * Modify page layout
      *
      * @access public
-     * @example ../examples/intermediate/modifyPageLayout.php
      * @param array paperType (string): A4, A3, letter, legal, A4-landscape, A3-landscape, letter-landscape, legal-landscape, custom
      * @param array options
      * Values:
@@ -4519,6 +4445,7 @@ class CreateDocx extends CreateDocument
         }
         // get the current sectPr nodes
         if ($options['onlyLastSection']) {
+            $this->_tempDocumentDOM = $this->getDOMDocx();
             $sectPrNodes = array();
             $sectPrNodes[] = $this->_sectPr->documentElement;
         } else {
@@ -4585,7 +4512,6 @@ class CreateDocx extends CreateDocument
      * It returns a docx with all the avalaible paragraph, list and table styles.
      *
      * @access public
-     * @example ../examples/easy/ParseStyles.php
      * @param string $path. Optional, if empty lists the styles of the current style sheet
      */
     public function parseStyles($path = '')
@@ -5006,7 +4932,6 @@ class CreateDocx extends CreateDocument
      * Changes the background color of the document
      *
      * @access public
-     * @example ../examples/easy/BackgroundColor.php
      * @param string $color
      * Values: hexadecimal color value without # (ffff00, 0000ff, ...)
      */
@@ -5044,7 +4969,6 @@ class CreateDocx extends CreateDocument
      * Change the default font
      *
      * @access public
-     * @example ../examples/easy/SetDefaultFont.php
      * @param string $font The new font
      *  Values: 'Arial', 'Times New Roman'...
      */
@@ -5086,7 +5010,6 @@ class CreateDocx extends CreateDocument
 
     /**
      * Change default language.
-     * @example ../examples/easy/Language.php
      * @param $lang Locale: en-US, es-ES...
      * @access public
      */
@@ -5114,7 +5037,6 @@ class CreateDocx extends CreateDocument
      * Mark the document as final
      *
      * @access public
-     * @example ../examples/easy/MarkAsFinal.php
      *
      */
     public function setMarkAsFinal()
@@ -5197,7 +5119,6 @@ class CreateDocx extends CreateDocument
      * Transforms all documents supported by OpenOffice
      *
      * @access public
-     * @example ../examples/advanced/Transform.php
      * @param string $docSource
      * @param string $docDestination
      * @param string $tempDir
@@ -5206,6 +5127,7 @@ class CreateDocx extends CreateDocument
      *                  passthru and 'script' uses a external script.
      *                  If you're using Apache and 'direct' doesn't work use 'script'
      *      · 'odfconverter' : true (default) or false. Use odf-converter.
+     *      · 'debug' : false (default) or true. It shows debug information about the plugin conversion
      * @param string $version 32, 64 or null (default). If null autodetect
      * @return void
      */
@@ -5458,7 +5380,7 @@ class CreateDocx extends CreateDocument
                 $options['i'] = 'on';
             }
             if (!empty($options['lineSpacing'])) {
-                $options['lineSpacing'] = ceil($options['lineSpacing'] * 240);
+                //$options['lineSpacing'] = ceil($options['lineSpacing'] * 240);
             }
 
             if (isset($options['fontSize'])) {
@@ -5503,7 +5425,6 @@ class CreateDocx extends CreateDocument
      *
      * Insert the content of a text file into a word document trying to hold the styles
      *
-     * @example ../examples/easy/Text2Docx.php
      * @param string $path. Path to the text file from which we insert into docx document
      * @param array of style values
      * keys: styleTbl, styleLst, styleP
@@ -5519,7 +5440,6 @@ class CreateDocx extends CreateDocument
      * Embeds a DOCX
      *
      * @access public
-     * @example ../examples/easy/DOCX.php
      * @param array $options
      * Values:
      * 'src' (string) path to DOCX
@@ -5577,9 +5497,6 @@ class CreateDocx extends CreateDocument
      * This method IS NOT compatible with PDF conversion or Open Office (use embedHTML instead).
      *
      * @access private
-     * @example ../examples/easy/HTML.php
-     * @example ../examples/intermediate/BasicHTML.php
-     * @example ../examples/intermediate/HTML.php
      * @param array $options
      * Values:
      * 'html' (string)
@@ -5614,7 +5531,6 @@ class CreateDocx extends CreateDocument
      * Add a MHT file
      *
      * @access private
-     * @example ../examples/easy/MHT.php
      * @param array $options
      * Values:
      * 'src' (string) path to the MHT file
@@ -5653,7 +5569,6 @@ class CreateDocx extends CreateDocument
      * Add a RTF file. Keep content and styles
      *
      * @access public
-     * @example ../examples/easy/RTF.php
      * @param array $options
      * Values:
      * 'src' (string) path to the RTF file
@@ -6193,7 +6108,7 @@ class CreateDocx extends CreateDocument
                 $options['target'] == 'firstFooter' ||
                 $options['target'] == 'evenFooter') {
             foreach ($sFinalDocX[1] as $key => $value) {
-                $this->_relsHeaderFooterLink[$options['target']][] = array('rId' => $key, 'url' => $value);
+                CreateDocx::$_relsHeaderFooterLink[$options['target']][] = array('rId' => $key, 'url' => $value);
             }
         } else if ($options['target'] == 'footnote' ||
                 $options['target'] == 'endnote' ||

@@ -43,4 +43,4 @@ $wf->addText($text);
 $docx->replaceVariableByWordFragment(array('INLINEFRAGMENT' => $wf), array('type' => 'inline', 'target' => 'footnote'));
 
 
-$docx->createDocx('example_replaceVariable ByWordFragment_2');
+$docx->createDocx('example_replaceVariableByWordFragment_2');

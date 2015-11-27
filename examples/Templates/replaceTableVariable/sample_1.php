@@ -21,7 +21,7 @@ $data = array(
 	        )
         );
 
-$docx->replaceTableVariable($data);
+$docx->replaceTableVariable($data, array('parseLineBreaks' => true));
 
 
 $docx->createDocx('example_replaceTableVariable_1');
