@@ -1,9 +1,8 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocxFromTemplate('../../files/simpleTemplate.docx');
+$docx = new Phpdocx\Create\CreateDocxFromTemplate('../../files/simpleTemplate.docx');
 //parse styles of the current template
 //notice that besides the original template styles PHPDocX has included additional useful styles
 $docx->parseStyles();

@@ -1,9 +1,8 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
 $text = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, ' .
     'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ' .
     'enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut' .

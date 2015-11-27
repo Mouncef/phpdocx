@@ -1,16 +1,15 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
 
-$bookmarkStart = new WordFragment($docx);
+$bookmarkStart = new Phpdocx\Elements\WordFragment($docx);
 $bookmarkStart->addBookmark(array('type' => 'start', 'name' => 'bookmark_name'));
-$bookmarkEnd = new WordFragment($docx);
+$bookmarkEnd = new Phpdocx\Elements\WordFragment($docx);
 $bookmarkEnd->addBookmark(array('type' => 'end', 'name' => 'bookmark_name'));
 
-$textRuns = array();
+$textRuns   = array();
 $textRuns[] = array('text' => 'We are only going to bookmark: ');
 $textRuns[] = $bookmarkStart;
 $textRuns[] = array('text' => 'this words.');

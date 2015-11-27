@@ -1,18 +1,17 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocxFromTemplate('../../files/TemplateWordFragment_3.docx');
+$docx = new Phpdocx\Create\CreateDocxFromTemplate('../../files/TemplateWordFragment_3.docx');
 
 //create the Word fragment that is going to replace the variable
-$wf = new WordFragment($docx, 'document');
+$wf = new Phpdocx\Elements\WordFragment($docx, 'document');
 
 //create an image fragment
-$image = new WordFragment($docx, 'document');
+$image = new Phpdocx\Elements\WordFragment($docx, 'document');
 $image->addImage(array('src' => '../../img/image.png' , 'scaling' => 50, 'float' => 'right', 'textWrap' => 1));
 //and also a link fragment
-$link = new WordFragment($docx, 'document');
+$link = new Phpdocx\Elements\WordFragment($docx, 'document');
 $link->addLink('link to Google', array('url'=> 'http://www.google.es', 'color' => '0000FF', 'u' => 'single'));
 
 //combine them to create a paragraph

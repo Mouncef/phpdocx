@@ -1,9 +1,8 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
 $docx->addText('Table of Contents', array('bold' => true, 'fontSize' => 14));
 $legend = array('text' => 'Click here to update the TOC', 
     'color' => 'B70000', 

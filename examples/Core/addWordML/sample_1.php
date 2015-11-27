@@ -1,9 +1,8 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
 $docx->addText('We are now going to add a paragraph by inserting a chunk of WordML code.');
 
 $wordML = '<w:p><w:r><w:t>A very simple paragraph with only text.</w:t></w:r></w:p>';

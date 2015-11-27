@@ -1,18 +1,17 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
 //Style options
 $style = array(
-	'color' => 'b70000',
-	'fontSize' => 26,
-	'tabPositions' =>array(array('$type' => 'clear', 'position' => 1600),
-						   array('$type' => 'clear', 'leader' => 'dot', 'position' => 2800),
-						   array('$type' => 'clear', 'leader' => 'dot', 'position' => 4000),
-						   )
-	);
+	'color'        => 'b70000',
+	'fontSize'     => 26,
+	'tabPositions' => array(array('$type' => 'clear', 'position' => 1600),
+		array('$type' => 'clear', 'leader' => 'dot', 'position' => 2800),
+		array('$type' => 'clear', 'leader' => 'dot', 'position' => 4000),
+	)
+);
 //Create custom style
 $docx->createParagraphStyle('myStyle', $style);
 //insert a paragraph with that style

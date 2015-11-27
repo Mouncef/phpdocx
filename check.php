@@ -134,7 +134,7 @@ $iPhpVersion = $version[0] * 10000 + $version[1] * 100 + $version[2];
 if ($isWeb) {
 	$output .= '<li class="odd">';
 }
-if ($iPhpVersion < 50000) {
+if ($iPhpVersion < 50300) {
 	if ($isWeb) {
 		$output .= '<span class="testko">';
 	}
@@ -142,7 +142,7 @@ if ($iPhpVersion < 50000) {
 	if ($isWeb) {
 		$output .= '</span>';
 	}
-    $output .= 'Your PHP version (' . PHP_VERSION . '), is too old, please update to PHP 5' . $break;
+    $output .= 'Your PHP version (' . PHP_VERSION . '), is too old, please update to PHP 5.3' . $break;
 } else {
 	if ($isWeb) {
 		$output .= '<span class="testok">';
@@ -183,7 +183,6 @@ if (!class_exists('ZipArchive')) {
 if ($isWeb) {
 	$output .= '</li>';
 }
-
 
 // DOM support
 if ($isWeb) {
@@ -283,8 +282,8 @@ $output .= 'If you have any issue or problem please send us the following info:'
 if ($isWeb) {
 	$output .= '<textarea onClick="this.select();">';
 }
-require_once 'classes/CreateDocx.inc';
-require_once 'classes/PhpdocxUtilities.inc';
+require_once 'Classes/Phpdocx/Create/CreateDocx.inc';
+require_once 'Classes/Phpdocx/Utilities/PhpdocxUtilities.inc';
 $output .= 'PHP_VERSION: ' . PHP_VERSION . "\n";
 $output .= 'PHP_OS: ' . PHP_OS . "\n";
 $output .= 'PHP_UNAME: ' . php_uname() . "\n";

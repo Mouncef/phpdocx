@@ -1,19 +1,17 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
-
+$docx = new Phpdocx\Create\CreateDocx();
 //we prepare some formatted text for insertion in the list
-$textData = new WordFragment($docx);
+$textData = new Phpdocx\Elements\WordFragment($docx);
 $text = array();
 $text[] = array('text' => 'We insert some ');
 $text[] = array('text' => 'bold text', 'b' => 'on');
 $textData->addText($text);
 
 //and also some simple HTML to illustrate the fexibility of the method
-$htmlData = new WordFragment($docx);
+$htmlData = new Phpdocx\Elements\WordFragment($docx);
 $html = '<i>Some HTML code</i> with a <a href="http://www.phpdocx.com">link</a>';
 $htmlData->embedHTML($html);
 

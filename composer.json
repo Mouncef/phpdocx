@@ -10,6 +10,6 @@
 		}
 	],
 	"autoload": {
-		"classmap": ["classes/"]
+		"psr-4": {"Phpdocx\\" : "Classes/Phpdocx/"}
 	}
 }

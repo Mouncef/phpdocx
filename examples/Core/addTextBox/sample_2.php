@@ -1,11 +1,10 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
 
-$txtbx = new WordFragment($docx);
+$txtbx = new Phpdocx\Elements\WordFragment($docx);
 
 $text= 'Some text content for the textbox. Lorem ipsum dolor sit amet, consectetur adipisicing elit, ' .
     'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut ' .
@@ -14,13 +13,11 @@ $text= 'Some text content for the textbox. Lorem ipsum dolor sit amet, consectet
     'in voluptate velit esse cillum dolore eu fugiat nulla pariatur.';
 
 $textBoxOptions = array(
-	'align' => 'right',
-	'paddingLeft' => 5,
-	'border' => false,
-	'fillColor' => '#ddddff',
-	'width' => 200,
-    'margin_top' => 10,
-    'margin_left' => 10,
+	'align' => 'left', 
+	'paddingLeft' => 5, 
+	'border' => false, 
+	'fillColor' => '#ddddff', 
+	'width' => 200
 	);
 
 $txtbx->addTextBox($text, $textBoxOptions);

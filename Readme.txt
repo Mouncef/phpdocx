@@ -299,23 +299,23 @@ Moreover this conversion is obtained by direct translation of the HTML code into
 This version of PHPDocX includes several enhancements that will greatly simplify the generation of Word documents with PHP.
 The main improvements can be summarized as follows:
 - New embedHTML method that:
-	o Directly translates HTML into WordProcessingXML.
-	o Allows to use native Word Styles, i.e. we may require that the HTML tables are formatted following a standard Word table style.
-	o Is compatible with OpenOffice and the Word 2003 compatibility pack.
-	o May download external HTML pages (complete or selected portions) embedding their images into the Word document.
+  o Directly translates HTML into WordProcessingXML.
+  o Allows to use native Word Styles, i.e. we may require that the HTML tables are formatted following a standard Word table style.
+  o Is compatible with OpenOffice and the Word 2003 compatibility pack.
+  o May download external HTML pages (complete or selected portions) embedding their images into the Word document.
 
 - PHPDocX v2.5.1 now uses base templates that allow:
-	o To use all standard Word styles for:
-		- Paragraphs.
-		- Tables with special formatting for first and last rows and columns, banded rows and columns and another standard features.
-		- Lists with several different numbering styles.
-		- Footnotes and endnotes.
-	o Include standard headings (numbered or not).
-	o Include customized headers and footers as well as front pages.
+  o To use all standard Word styles for:
+    - Paragraphs.
+    - Tables with special formatting for first and last rows and columns, banded rows and columns and another standard features.
+    - Lists with several different numbering styles.
+    - Footnotes and endnotes.
+  o Include standard headings (numbered or not).
+  o Include customized headers and footers as well as front pages.
 
 - There are new methods that allow you to parse all the available styles of a Word document and import them into your base template:
-	o parseStyles  generates a Word document with all the available styles as well as the required PHPDocX code to use them in your final Word document (you may download here the result of this method applied to the default PHPDocX base template).
-	o importStyles allows to integrate new styles  extracted from an external Word document into your base template.
+  o parseStyles  generates a Word document with all the available styles as well as the required PHPDocX code to use them in your final Word document (you may download here the result of this method applied to the default PHPDocX base template).
+  o importStyles allows to integrate new styles  extracted from an external Word document into your base template.
 
 - New conversion plugin (based on OpenOffice) that improves the generation of PDFs, RTFs and legacy versions of Word documents.
 

@@ -1,9 +1,8 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocxFromTemplate('../../files/TemplateSimpleTable.docx');
+$docx = new Phpdocx\Create\CreateDocxFromTemplate('../../files/TemplateSimpleTable.docx');
 
 
 $data = array(

@@ -1,9 +1,8 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
 
 
 $options = array(
@@ -31,7 +30,7 @@ $text = 'Although you can have a little more control using Word fragments. ';
 $text .= 'This si so because in the first example the image is in a paragraph of its own ';
 $text.= 'while here it is inserted in the same paragraph as this text.';
 
-$image = new WordFragment($docx);
+$image = new Phpdocx\Elements\WordFragment($docx);
 $options = array(
     'src' => '../../img/image.png',
     'scaling' => 40,

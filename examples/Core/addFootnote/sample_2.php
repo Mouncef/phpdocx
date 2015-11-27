@@ -1,13 +1,12 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
 
-$footnote = new WordFragment($docx, 'document');
+$footnote = new Phpdocx\Elements\WordFragment($docx, 'document');
 
-$html = new WordFragment($docx, 'footnote');//notice the different "target"
+$html = new Phpdocx\Elements\WordFragment($docx, 'footnote');//notice the different "target"
 
 $htmlCode = '<p>This is some HTML code with a link to <a href="http://www.2mdc.com">2mdc.com</a> and a random image: 
 <img src="../../img/image.png" width="35" height="35" style="vertical-align: middle"></p>';

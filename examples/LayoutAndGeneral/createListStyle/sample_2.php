@@ -1,17 +1,16 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
 //Custom Bullets
-$latinListOptions = array();
-$latinListOptions[0]['type'] = 'bullet';
+$latinListOptions              = array();
+$latinListOptions[0]['type']   = 'bullet';
 $latinListOptions[0]['format'] = 'G';
-$latinListOptions[0]['font'] = 'Wingdings';
-$latinListOptions[1]['type'] = 'bullet';
+$latinListOptions[0]['font']   = 'Wingdings';
+$latinListOptions[1]['type']   = 'bullet';
 $latinListOptions[1]['format'] = 'F';
-$latinListOptions[1]['font'] = 'Wingdings';
+$latinListOptions[1]['font']   = 'Wingdings';
 //Create the list style with name: latin
 $docx->createListStyle('funnyBullets', $latinListOptions);
 //List items
