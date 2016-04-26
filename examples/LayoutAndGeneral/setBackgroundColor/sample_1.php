@@ -1,9 +1,8 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
 //Set the background color of the document
 $docx->setBackgroundColor('FFFFCC');
 //Include a paragraph of plain text

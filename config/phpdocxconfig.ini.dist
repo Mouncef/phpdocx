@@ -21,3 +21,12 @@ paper_size = "A4"
 code = ""
 ; subdomain (PRO license), domain (Corporate license) or IP (Enterprise license)
 value = ""
+
+[transform]
+; transform options. Only available for Corporate and Enterprise licenses. OpenOffice by default
+
+; libreoffice or openoffice
+;method = "libreoffice"
+
+; libreoffice installation path, absolute path
+;path = "/opt/libreoffice4.3/program/soffice"

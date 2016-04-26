@@ -1,57 +1,55 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
 
 //create a Word fragment with an image to be inserted in the header of the document
 $imageOptions = array(
-	'src' => '../../img/image.png', 
-	'dpi' => 600,  
+	'src' => '../../img/image.png',
+	'dpi' => 600,
 );
 
-$headerImage = new WordFragment($docx, 'defaultHeader');
+$headerImage = new Phpdocx\Elements\WordFragment($docx, 'defaultHeader');
 $headerImage->addImage($imageOptions);
 
 //create a Word Fragment with a text
 $textOptions = array(
 	'fontSize' => 13,
-	'b' => 'on',
-	'color' => '567899',
+	'b'        => 'on',
+	'color'    => '567899',
 );
-$headerText = new WordFragment($docx, 'defaultHeader');
+$headerText = new Phpdocx\Elements\WordFragment($docx, 'defaultHeader');
 $headerText->addText('PHPDocX Header Title', $textOptions);
 
 //create a Word Fragment with page numbering
 $pageNumberOptions = array(
 	'textAlign' => 'right',
-    'fontSize' => 11,
+	'fontSize'  => 11,
 );
-$headerPageNumber = new WordFragment($docx, 'defaultHeader');
+$headerPageNumber = new Phpdocx\Elements\WordFragment($docx, 'defaultHeader');
 $headerPageNumber->addPageNumber('numerical', $pageNumberOptions);
-
 
 //create a Word Fragment with a table that will hold all elements
 //Warning: we include an additional border none property to the table cells to improve
 //PDF rendering
 $valuesTable = array(
-    array(
-        array('value' =>$headerImage, 'vAlign' => 'center'),
-        array('value' =>$headerText, 'vAlign' => 'center'),
-        array('value' =>$headerPageNumber, 'vAlign' => 'center'),
-    ),
+	array(
+		array('value' => $headerImage, 'vAlign' => 'center'),
+		array('value' => $headerText, 'vAlign' => 'center'),
+		array('value' => $headerPageNumber, 'vAlign' => 'center'),
+	),
 );
 $widthTableCols = array(
-    700,
-    7500,
-    500
+	700,
+	7500,
+	500,
 );
 $paramsTable = array(
-    'border' => 'nil',
-    'columnWidths' => $widthTableCols,
+	'border'       => 'nil',
+	'columnWidths' => $widthTableCols,
 );
-$headerTable = new WordFragment($docx, 'defaultHeader');
+$headerTable = new Phpdocx\Elements\WordFragment($docx, 'defaultHeader');
 $headerTable->addTable($valuesTable, $paramsTable);
 
 //add some text to the body of the document

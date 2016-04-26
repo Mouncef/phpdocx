@@ -1,9 +1,8 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
 
 $docx->addText('We write a math equation using OMML (the native Word XML standard for math equations):');
 
@@ -15,7 +14,7 @@ $docx->addMathEquation(
 
 $text = array();
 $text[] = array('text' => 'The same equation inline: ');
-$math = new WordFragment($docx);
+$math = new Phpdocx\Elements\WordFragment($docx);
 $math->addMathEquation(
     '<m:oMathPara>
         <m:oMath><m:r><m:t>∪±∞=~×</m:t></m:r></m:oMath>

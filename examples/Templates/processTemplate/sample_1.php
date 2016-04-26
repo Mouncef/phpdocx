@@ -1,9 +1,8 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocxFromTemplate('../../files/TemplateVariables.docx');
+$docx = new Phpdocx\Create\CreateDocxFromTemplate('../../files/TemplateVariables.docx');
 
 //You may include manually the list of variables that should be preprocessed or use
 //the getTemplateVariables method for an automatic listing

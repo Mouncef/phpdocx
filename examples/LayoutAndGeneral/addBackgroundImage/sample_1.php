@@ -1,9 +1,8 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
 //You should include the relative path to the image you want to use as background
 $docx->addBackgroundImage('../../img/image.jpg');
 //add a paragraph of text

@@ -1,12 +1,11 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
 
 //create a simple Word fragment with formatted text to be include in the textbox
-$txtboxContent =new WordFragment($docx);
+$txtboxContent =new Phpdocx\Elements\WordFragment($docx);
 
 $runs = array();
 
@@ -23,7 +22,7 @@ $textBoxOptions = array(
     'contentVerticalAlign' => 'bottom'
 	);
 
-$txtbx = new WordFragment($docx);
+$txtbx = new Phpdocx\Elements\WordFragment($docx);
 
 $txtbx->addTextBox($txtboxContent, $textBoxOptions);
 

@@ -1,12 +1,12 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
+
 
 //create a Word fragment to insdert in the default header
-$numbering = new WordFragment($docx, 'defaultHeader');
+$numbering = new Phpdocx\Elements\WordFragment($docx, 'defaultHeader');
 //sert some formatting options
 $options = array('textAlign' => 'right',
                  'bold' => true,

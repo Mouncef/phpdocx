@@ -1,21 +1,20 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
 
 //Create a Word fragment with an image to be inserted in the header of the document
 $imageOptions = array(
-	'src' => '../../img/image.png', 
-	'dpi' => 300,  
+	'src' => '../../img/image.png',
+	'dpi' => 300,
 );
 
-$default = new WordFragment($docx, 'defaultFooter');
+$default = new Phpdocx\Elements\WordFragment($docx, 'defaultFooter');
 $default->addImage($imageOptions);
-$first = new WordFragment($docx, 'firstFooter');
+$first = new Phpdocx\Elements\WordFragment($docx, 'firstFooter');
 $first->addText('first page footer.');
-$even = new WordFragment($docx, 'evenFooter');
+$even = new Phpdocx\Elements\WordFragment($docx, 'evenFooter');
 $even->addText('even page footer.');
 
 $docx->addFooter(array('default' => $default, 'first' => $first, 'even' => $even));

@@ -1,13 +1,12 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
 
-$endnote = new WordFragment($docx, 'document');
+$endnote = new Phpdocx\Elements\WordFragment($docx, 'document');
 
-$html = new WordFragment($docx, 'endnote');//notice the different "target"
+$html = new Phpdocx\Elements\WordFragment($docx, 'endnote');//notice the different "target"
 
 $htmlCode = '<p>This is some HTML code with a link to <a href="http://www.2mdc.com">2mdc.com</a> and a random image: 
 <img src="../../img/image.png" width="35" height="35" style="vertical-align: middle"></p>';
@@ -33,5 +32,5 @@ $text[]= array('text' => ' and some other text.');
 $docx->addText($text);
 $docx->addText('Some other text.');
 
-$docx->createDocx('example_Endnote_2');
+$docx->createDocx('example_addEndnote_2');
 

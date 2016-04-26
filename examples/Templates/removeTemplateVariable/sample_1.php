@@ -1,9 +1,8 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocxFromTemplate('../../files/TemplateVariables.docx');
+$docx = new Phpdocx\Create\CreateDocxFromTemplate('../../files/TemplateVariables.docx');
 
 //first we remove the whole pragraph the contains the 'FOOTERVAR' variable
 $docx->removeTemplateVariable('FOOTERVAR', 'block', 'footer');

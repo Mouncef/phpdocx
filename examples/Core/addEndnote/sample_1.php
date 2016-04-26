@@ -1,25 +1,22 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
 
-$endnote = new WordFragment($docx, 'document');
+$endnote = new Phpdocx\Elements\WordFragment($docx, 'document');
 
 $endnote->addEndnote(
-    array(
-        'textDocument' => 'endnote',
-        'textEndnote' => 'The endnote we want to insert.',
-    )
+	array(
+		'textDocument' => 'endnote',
+		'textEndnote'  => 'The endnote we want to insert.',
+	)
 );
-                    
 
-$text = array();
-$text[]= array('text' => 'Here comes the ');
-$text[]= $endnote;
-$text[]= array('text' => ' and some other text.');
-
+$text   = array();
+$text[] = array('text' => 'Here comes the ');
+$text[] = $endnote;
+$text[] = array('text' => ' and some other text.');
 
 $docx->addText($text);
 $docx->addText('Some other text.');

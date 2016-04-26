@@ -1,9 +1,8 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocxFromTemplate('../../files/TemplateWordML.docx');
+$docx = new Phpdocx\Create\CreateDocxFromTemplate('../../files/TemplateWordML.docx');
 
 //beware that this method does not take care of relationships and dependences
 //so you have to make sure that the wordML is 'self-contained'

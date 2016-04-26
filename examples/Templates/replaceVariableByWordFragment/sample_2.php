@@ -1,20 +1,19 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocxFromTemplate('../../files/TemplateWordFragment_2.docx');
+$docx = new Phpdocx\Create\CreateDocxFromTemplate('../../files/TemplateWordFragment_2.docx');
 
 //create the Word fragment that is going to replace the variable
 //like the variable to replace is in a footnote we should it as target
-$wf = new WordFragment($docx, 'footnote');
+$wf = new Phpdocx\Elements\WordFragment($docx, 'footnote');
 
 //create an image fragment
-$image = new WordFragment($docx, 'footnote');
+$image = new Phpdocx\Elements\WordFragment($docx, 'footnote');
 //Warning: you can not poition absolutely  images in footnotes. That is a limitation of the Word interface not the standard.
 $image->addImage(array('src' => '../../img/image.png' , 'scaling' => 10));
 //and also a link fragment
-$link = new WordFragment($docx, 'footnote');
+$link = new Phpdocx\Elements\WordFragment($docx, 'footnote');
 $link->addLink('link to Google', array('url'=> 'http://www.google.es', 'color' => '0000FF', 'u' => 'single'));
 
 //combine them to create a paragraph

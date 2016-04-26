@@ -1,9 +1,8 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
 $html = '<h1 style="color: #b70000">An embedHTML() example</h1>';
 $html .= '<p>We draw a table with border and rawspans and colspans:</p>';
 $html .= '<table border="1" style="border-collapse: collapse">

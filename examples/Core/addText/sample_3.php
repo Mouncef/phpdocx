@@ -1,12 +1,11 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
 
 //create a Word fragment with an image
-$image = new WordFragment($docx);
+$image = new Phpdocx\Elements\WordFragment($docx);
 $imageOptions = array(
     'src' => '../../img/image.png',
     'scaling' => 50, 
@@ -16,14 +15,14 @@ $imageOptions = array(
 $image->addImage($imageOptions);
 
 //create a Word fragment with a link
-$link = new WordFragment($docx);
+$link = new Phpdocx\Elements\WordFragment($docx);
 $linkOptions = array('url'=> 'http://www.google.es', 
     'color' => '0000FF', 
     'underline' => 'single');
 $link->addLink('link to Google', $linkOptions);
 
 //create a Word fragment with a footnote
-$footnote = new WordFragment($docx);
+$footnote = new Phpdocx\Elements\WordFragment($docx);
 $footnote->addFootnote(
     array(
         'textDocument' => 'here it is',

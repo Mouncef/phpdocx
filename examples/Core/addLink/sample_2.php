@@ -1,11 +1,10 @@
 <?php
 
-//path to  the CreateDocx class within your PHPDocX installation
-require_once '../../../classes/CreateDocx.inc';
+require_once '../../../Classes/Phpdocx/Create/CreateDocx.inc';
 
-$docx = new CreateDocx();
+$docx = new Phpdocx\Create\CreateDocx();
 
-$link = new WordFragment($docx);
+$link = new Phpdocx\Elements\WordFragment($docx);
 $link->addLink('Google', array('url'=> 'http://www.google.es'));
 
 $runs = array();
